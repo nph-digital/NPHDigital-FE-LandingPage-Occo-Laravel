@@ -1,0 +1,659 @@
+.property-default {
+  position: relative;
+  width: 1440px;
+  height: 800px;
+  background-color: var(--colors-electric-violet-300);
+}
+
+.property-default .overlap {
+  position: absolute;
+  width: 512px;
+  height: 624px;
+  top: 141px;
+  left: 1068px;
+}
+
+.property-default .ball {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  top: 284px;
+  left: 172px;
+  filter: blur(15px);
+  background-image: url(./img/ball.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.property-default .overlap-group {
+  position: relative;
+  height: 340px;
+}
+
+.property-default .color {
+  position: absolute;
+  width: 240px;
+  height: 241px;
+  top: 47px;
+  left: 52px;
+  border-radius: 120.15px/120.33px;
+  mix-blend-mode: hard-light;
+  background: linear-gradient(187deg, rgba(252, 129, 242, 0.9) 0%, rgba(112, 59, 255, 0.9) 100%);
+}
+
+.property-default .light {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  top: 0;
+  left: 0;
+  mix-blend-mode: lighten;
+  object-fit: cover;
+}
+
+.property-default .image-wrap {
+  position: absolute;
+  width: 220px;
+  height: 242px;
+  top: 97px;
+  left: 30px;
+  background-color: var(--1-color-modes-colors-border-border-secondary);
+  border-radius: 8.05px;
+  overflow: hidden;
+  border: 9.22px solid;
+  border-color: #ffffff;
+  transform: rotate(7.86deg);
+}
+
+.property-default .image {
+  position: relative;
+  width: 201px;
+  height: 224px;
+  border-radius: 8.05px;
+  overflow: hidden;
+  border: 1.34px solid;
+  border-color: #00000014;
+  background-image: url(./img/image.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.property-default .img {
+  position: absolute;
+  width: 230px;
+  height: 249px;
+  top: -13px;
+  left: -14px;
+  transform: rotate(-7.86deg);
+  object-fit: cover;
+}
+
+.property-default .badge {
+  display: flex;
+  width: 74px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: 4.28px;
+  padding: 4.28px var(--3-spacing-spacing-md) 4.28px var(--3-spacing-spacing-md);
+  position: absolute;
+  top: 317px;
+  left: 119px;
+  background-color: var(--colors-picton-blue-50);
+  border-radius: 212.06px;
+}
+
+.property-default .chat-circle {
+  position: relative;
+  width: 25.71px;
+  height: 25.7px;
+}
+
+.property-default .yu-thch {
+  position: absolute;
+  width: 200px;
+  height: 152px;
+  top: 28px;
+  left: 19px;
+  transform: rotate(18.55deg);
+  box-shadow: 0px 2.67px 5.91px #632fd2;
+}
+
+.property-default .div {
+  position: absolute;
+  width: 198px;
+  height: 125px;
+  top: -3px;
+  left: 0;
+}
+
+.property-default .clip-path-group {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 114px;
+  left: 23px;
+  transform: rotate(-18.55deg);
+}
+
+.property-default .clip-path-group-2 {
+  width: 10px;
+  height: 10px;
+  top: 108px;
+  left: 10px;
+  position: absolute;
+  transform: rotate(-18.55deg);
+}
+
+.property-default .clip-path-group-3 {
+  width: 7px;
+  height: 7px;
+  top: 101px;
+  left: 6px;
+  position: absolute;
+  transform: rotate(-18.55deg);
+}
+
+.property-default .overlap-2 {
+  position: absolute;
+  width: 198px;
+  height: 106px;
+  top: 12px;
+  left: 0;
+}
+
+.property-default .vector {
+  position: absolute;
+  width: 28px;
+  height: 26px;
+  top: 22px;
+  left: 167px;
+  transform: rotate(-18.55deg);
+}
+
+.property-default .vector-2 {
+  width: 26px;
+  height: 26px;
+  top: 23px;
+  left: 167px;
+  position: absolute;
+  transform: rotate(-18.55deg);
+}
+
+.property-default .vector-3 {
+  width: 8px;
+  height: 8px;
+  top: 28px;
+  left: 176px;
+  position: absolute;
+  transform: rotate(-18.55deg);
+}
+
+.property-default .vector-4 {
+  width: 11px;
+  height: 10px;
+  top: 1px;
+  left: 134px;
+  position: absolute;
+  transform: rotate(-18.55deg);
+}
+
+.property-default .vector-5 {
+  width: 10px;
+  height: 10px;
+  top: 2px;
+  left: 134px;
+  position: absolute;
+  transform: rotate(-18.55deg);
+}
+
+.property-default .vector-6 {
+  width: 3px;
+  height: 3px;
+  top: 5px;
+  left: 141px;
+  position: absolute;
+  transform: rotate(-18.55deg);
+}
+
+.property-default .miss {
+  position: absolute;
+  width: 142px;
+  height: 70px;
+  top: 7px;
+  left: 10px;
+}
+
+.property-default .group {
+  position: absolute;
+  width: 67px;
+  height: 25px;
+  top: 44px;
+  left: 79px;
+  transform: rotate(2.09deg);
+}
+
+.property-default .overlap-group-2 {
+  position: relative;
+  width: 63px;
+  height: 25px;
+}
+
+.property-default .w {
+  position: absolute;
+  width: 63px;
+  top: 1px;
+  left: 0;
+  font-family: "La Belle Aurore-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24.1px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.property-default .text-wrapper {
+  top: 0;
+  color: var(--colors-lavender-magenta-500);
+  position: absolute;
+  width: 63px;
+  left: 0;
+  font-family: "La Belle Aurore-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 24.1px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.property-default .overlap-wrapper {
+  position: absolute;
+  width: 67px;
+  height: 25px;
+  top: 14px;
+  left: 2px;
+  transform: rotate(-28.78deg);
+}
+
+.property-default .text-wrapper-2 {
+  width: 163px;
+  top: 29px;
+  left: 4px;
+  color: #ffffff;
+  position: absolute;
+  transform: rotate(-18.52deg);
+  font-family: "Lily Script One-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 36.2px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.property-default .text-wrapper-3 {
+  width: 142px;
+  top: 25px;
+  left: 14px;
+  -webkit-text-stroke: 0.67px #fe76ec;
+  color: var(--colors-lavender-magenta-500);
+  position: absolute;
+  transform: rotate(-18.52deg);
+  font-family: "Lily Script One-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 36.2px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border-color: var(--colors-lavender-magenta-400);
+}
+
+.property-default .overlap-3 {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 0;
+  left: 147px;
+}
+
+.property-default .vector-7 {
+  width: 15px;
+  height: 15px;
+  top: 2px;
+  left: 2px;
+  position: absolute;
+  transform: rotate(-18.55deg);
+}
+
+.property-default .vector-8 {
+  width: 14px;
+  height: 15px;
+  top: 2px;
+  left: 2px;
+  position: absolute;
+  transform: rotate(-18.55deg);
+}
+
+.property-default .vector-9 {
+  width: 5px;
+  height: 4px;
+  top: 7px;
+  left: 11px;
+  position: absolute;
+  transform: rotate(-18.55deg);
+}
+
+.property-default .overlap-4 {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 18px;
+  left: 160px;
+}
+
+.property-default .vector-10 {
+  width: 11px;
+  height: 10px;
+  top: 1px;
+  left: 1px;
+  position: absolute;
+  transform: rotate(-18.55deg);
+}
+
+.property-default .vector-11 {
+  width: 10px;
+  height: 10px;
+  top: 2px;
+  left: 1px;
+  position: absolute;
+  transform: rotate(-18.55deg);
+}
+
+.property-default .vector-12 {
+  width: 3px;
+  height: 3px;
+  top: 5px;
+  left: 8px;
+  position: absolute;
+  transform: rotate(-18.55deg);
+}
+
+.property-default .vector-13 {
+  width: 2px;
+  height: 1px;
+  top: 150px;
+  left: 198px;
+  position: absolute;
+  transform: rotate(-18.55deg);
+}
+
+.property-default .overlap-5 {
+  position: absolute;
+  width: 366px;
+  height: 438px;
+  top: 146px;
+  left: 14px;
+}
+
+.property-default .overlap-group-wrapper {
+  position: absolute;
+  width: 317px;
+  height: 317px;
+  top: 0;
+  left: 0;
+  transform: rotate(180deg);
+  filter: blur(20px);
+}
+
+.property-default .overlap-6 {
+  position: relative;
+  height: 352px;
+}
+
+.property-default .div-wrapper {
+  position: absolute;
+  width: 317px;
+  height: 317px;
+  top: 0;
+  left: 0;
+}
+
+.property-default .overlap-group-3 {
+  position: relative;
+  height: 317px;
+}
+
+.property-default .ball-2 {
+  position: absolute;
+  width: 317px;
+  height: 317px;
+  top: 0;
+  left: 0;
+  transform: rotate(-180deg);
+  object-fit: cover;
+}
+
+.property-default .color-2 {
+  width: 224px;
+  height: 224px;
+  top: 44px;
+  left: 48px;
+  background-color: var(--blue-violetblue-violet-600);
+  border-radius: 112.02px/112.19px;
+  position: absolute;
+  mix-blend-mode: hard-light;
+}
+
+.property-default .light-2 {
+  width: 317px;
+  height: 317px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-180deg);
+  mix-blend-mode: lighten;
+  object-fit: cover;
+}
+
+.property-default .ball-3 {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  top: 309px;
+  left: 218px;
+  transform: rotate(180deg);
+}
+
+.property-default .overlap-7 {
+  position: relative;
+  height: 43px;
+}
+
+.property-default .ball-4 {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  top: 0;
+  left: 0;
+  transform: rotate(-180deg);
+  object-fit: cover;
+}
+
+.property-default .color-3 {
+  width: 30px;
+  height: 30px;
+  top: 7px;
+  left: 7px;
+  border-radius: 15.16px/15.19px;
+  background: linear-gradient(187deg, rgba(234, 175, 200, 0.9) 0%, rgba(101, 78, 163, 0.9) 100%);
+  position: absolute;
+  mix-blend-mode: hard-light;
+}
+
+.property-default .light-3 {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-180deg);
+  mix-blend-mode: lighten;
+  object-fit: cover;
+}
+
+.property-default .image-wrapper {
+  position: absolute;
+  width: 176px;
+  height: 194px;
+  top: 236px;
+  left: 181px;
+  background-color: var(--1-color-modes-colors-border-border-secondary);
+  border-radius: 6.45px;
+  overflow: hidden;
+  border: 7.39px solid;
+  border-color: #ffffff;
+  transform: rotate(-5.42deg);
+}
+
+.property-default .img-wrapper {
+  position: relative;
+  width: 161px;
+  height: 180px;
+  border-radius: 6.45px;
+  overflow: hidden;
+  border: 1.08px solid;
+  border-color: #00000014;
+  background-image: url(./img/image-2.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.property-default .image-2 {
+  position: absolute;
+  width: 177px;
+  height: 192px;
+  top: -6px;
+  left: -8px;
+  transform: rotate(5.42deg);
+  object-fit: cover;
+}
+
+.property-default .badge-2 {
+  width: 55px;
+  height: 42.95px;
+  gap: 3.6px;
+  padding: 3.6px 14.41px;
+  top: 203px;
+  left: 304px;
+  background-color: var(--colors-lavender-magenta-100);
+  border-radius: 178.34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.property-default .heart {
+  position: relative;
+  width: 21.62px;
+  height: 21.62px;
+}
+
+.property-default .content {
+  position: absolute;
+  width: 629px;
+  height: 296px;
+  top: 252px;
+  left: 405px;
+}
+
+.property-default .frame {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  position: absolute;
+  top: 0;
+  left: 42px;
+}
+
+.property-default .p {
+  position: relative;
+  width: 587px;
+  margin-top: -1px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 70px;
+}
+
+.property-default .text-wrapper-4 {
+  position: relative;
+  width: 560px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #823da4;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+.property-default .ellipse {
+  position: absolute;
+  width: 593px;
+  height: 278px;
+  top: 9162px;
+  left: 20808px;
+}
+
+.property-default .overlap-8 {
+  position: absolute;
+  width: 145px;
+  height: 56px;
+  top: 548px;
+  left: 647px;
+  border-radius: 327.17px;
+}
+
+.property-default .gif {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 1px;
+  left: 45px;
+  object-fit: cover;
+}
+
+.property-default .badge-3 {
+  width: 145px;
+  height: 56px;
+  gap: 6.61px;
+  padding: 6.61px 26.44px;
+  top: 0;
+  left: 0;
+  background-color: var(--colors-electric-violet-500);
+  border-radius: 327.17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.property-default .text-wrapper-5 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 32px;
+  white-space: nowrap;
+}
