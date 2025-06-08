@@ -15,4 +15,5 @@
 
     <x-homepage.marquee />
     <x-homepage.section-live />
+    <x-homepage.section-connect />
 </div>
