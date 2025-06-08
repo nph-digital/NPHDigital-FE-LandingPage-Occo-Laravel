@@ -17,4 +17,5 @@
     <x-homepage.section-live />
     <x-homepage.section-connect />
     <x-homepage.section-cmt />
+    <x-homepage.section-point />
 </div>
