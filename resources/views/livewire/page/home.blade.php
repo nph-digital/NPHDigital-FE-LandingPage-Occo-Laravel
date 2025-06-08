@@ -18,4 +18,6 @@
     <x-homepage.section-connect />
     <x-homepage.section-cmt />
     <x-homepage.section-point />
+    <x-homepage.section-pet-occo />
+    <x-homepage.section-feedback />
 </div>
