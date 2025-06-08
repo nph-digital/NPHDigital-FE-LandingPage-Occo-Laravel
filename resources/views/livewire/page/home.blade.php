@@ -16,4 +16,5 @@
     <x-homepage.marquee />
     <x-homepage.section-live />
     <x-homepage.section-connect />
+    <x-homepage.section-cmt />
 </div>
