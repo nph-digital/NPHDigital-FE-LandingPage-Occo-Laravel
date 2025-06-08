@@ -23,6 +23,7 @@
 <body>
     <x-header />
     {{ $slot }}
+    <x-footer />
 </body>
 
 </html>
