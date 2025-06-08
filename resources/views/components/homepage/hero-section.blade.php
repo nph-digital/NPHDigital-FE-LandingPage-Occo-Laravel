@@ -1,4 +1,4 @@
-<div class="relative z-10 container mx-auto px-6 pt-8 pb-12 flex flex-col lg:flex-row items-center min-h-[80vh]">
+<div class="relative z-10 container mx-auto px-6 pt-8 pb-12 flex flex-col lg:flex-row items-center min-h-screen">
     <!-- LEFT: TEXT -->
     <div class="flex-[2.5] flex flex-col justify-center items-start max-w-3xl">
         <h1
@@ -67,5 +67,8 @@
                 <img src="{{ asset('occo/home/t3.png') }}" alt="Profile 3" class="object-cover">
             </div>
         </div>
+    </div>
+    <div class="absolute right-[250px] z-10 bottom-[-100px]">
+        <img src="{{ asset('occo/home/Gif_(18).gif') }}" alt="Profile 3" class="object-cover w-[350px]">
     </div>
 </div>
