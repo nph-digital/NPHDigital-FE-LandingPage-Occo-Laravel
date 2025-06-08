@@ -1,6 +1,6 @@
 <section class="w-full bg-[#FFF8F3] py-8 border-t-2 border-[#C1B8FA] overflow-hidden select-none">
     <div class="relative w-full">
-        <div class="flex items-center animate-marquee-cmt gap-8 whitespace-nowrap">
+        <div class="flex items-center animate-marquee-cmt gap-x-16 whitespace-nowrap">
             @php
                 $comments = [
                     ['text' => 'Giao diện đỉnh, âm thanh nét, cộng đồng chất. App này không chỉ dễ nói – mà dễ cảm.', 'user' => '@HOANGTAM'],
@@ -28,10 +28,10 @@
                 $marqueeCmt = array_merge($comments, $comments, $comments);
             @endphp
             @foreach ($marqueeCmt as $cmt)
-                <div class="flex flex-col items-center text-center min-w-[260px] max-w-xs px-4 py-4">
-                    <div class="text-[#6C3DF4] font-extrabold text-base md:text-lg lg:text-xl leading-tight mb-3">{!! nl2br(e($cmt['text'])) !!}</div>
-                    <span class="inline-block border-2 border-[#6C3DF4] text-[#6C3DF4] rounded-lg px-4 py-1 text-xs font-bold tracking-widest uppercase">{{ $cmt['user'] }}</span>
-                </div>
+                <div class="flex flex-col items-center text-center min-w-[340px] max-w-[340px] px-8 py-4 break-words">
+    <div class="text-[#6C3DF4] font-extrabold text-lg md:text-xl lg:text-2xl leading-tight mb-4 break-words whitespace-pre-line">{!! nl2br(e($cmt['text'])) !!}</div>
+    <span class="inline-block border-2 border-[#6C3DF4] text-[#6C3DF4] rounded-lg px-4 py-1 text-xs font-bold tracking-widest uppercase">{{ $cmt['user'] }}</span>
+</div>
             @endforeach
         </div>
     </div>
