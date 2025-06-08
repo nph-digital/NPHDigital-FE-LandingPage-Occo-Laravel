@@ -36,7 +36,7 @@
             </style>
             <a href="{{ Route::has('home') ? route('home') : '#' }}" class="nav-anim border-b-2 border-white pb-1 text-white">Giới thiệu</a>
             <a href="{{ Route::has('privacy') ? route('privacy') : '#' }}" class="nav-anim text-white">Chính sách bảo mật</a>
-            <a href="{{ Route::has('term') ? route('term') : '#' }}" class="nav-anim text-white">Thỏa thuận dịch vụ</a>
+            <a href="{{ Route::has('service-agreement') ? route('service-agreement') : '#' }}" class="nav-anim text-white">Thỏa thuận dịch vụ</a>
             <a href="{{ Route::has('contact') ? route('contact') : '#' }}" class="nav-anim text-white">Liên hệ ngay</a>
         </nav>
     </div>

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const container = document.querySelector('.privacy-content-autoclass');
+    const container = document.querySelector('.privacy-service-page-content-autoclass');
     if (!container) return;
 
     // Tự động thêm class cho tất cả h2
