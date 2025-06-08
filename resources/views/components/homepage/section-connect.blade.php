@@ -20,16 +20,18 @@
         <div class="flex-[2] flex flex-col items-center justify-center text-center px-2">
             <h1 class="text-white text-4xl md:text-5xl font-extrabold mb-4 leading-tight drop-shadow">Kết nối Thiên
                 Ý<br>Kết bạn chỉ 1 chạm</h1>
-            <p class="text-[#7B5CB0] text-base md:text-lg font-medium mb-7 max-w-xl">
-                Chỉ một chạm, bạn đã sẵn sàng kết nối với những người bạn tâm giao?<br>
-                Tải ngay Occo để khám phá những mối quan hệ ý nghĩa, an toàn và đầy thú vị. Thiên Ý dẫn lối – bạn chỉ
-                cần chạm!
+            <p class="text-[#7B5CB0] text-base md:text-lg mb-7 max-w-xl">
+                Chỉ một chạm, bạn đã sẵn sàng kết nối với những người bạn tâm giao? Tải ngay Occo để khám phá những mối
+                quan hệ ý nghĩa, an toàn và đầy thú vị. Thiên Ý dẫn lối – bạn chỉ cần chạm!
             </p>
-            <button
-                class="bg-[#7C4DFF] hover:bg-[#6F3FFF] text-white font-bold rounded-full px-8 py-3 text-lg shadow-lg transition mb-2 flex items-center gap-2">
-                <img src="{{ asset('occo/home/Gif_(30).gif') }}" alt="Pet" class="w-7 h-7" />
-                Tải Occo
-            </button>
+            <div class="relative flex flex-col items-center mb-2">
+                <img src="{{ asset('occo/home/Gif_(18).gif') }}" alt="Pet" class="w-20 h-20 mb-[-32px] z-20"
+                    style="margin-bottom:-30px;" />
+                <button
+                    class="bg-[#7C4DFF] hover:bg-[#6F3FFF] text-white font-bold rounded-full px-14 py-5 text-2xl shadow-lg transition flex items-center justify-center min-w-[320px] z-50">
+                    Tải Occo
+                </button>
+            </div>
         </div>
         <!-- Avatar Right -->
         <div class="flex-1 flex justify-center items-center">
@@ -37,9 +39,10 @@
                 <img src="{{ asset('occo/home/Image-wrap2.png') }}" alt="Avatar Right"
                     class="w-[350px] -translate-y-8" />
                 <img src="{{ asset('occo/home/yeuthich.png') }}" alt="Yêu thích"
-                    class="absolute -top-6 right-2 w-24 select-none pointer-events-none" />
+                    class="absolute -top-20 left-30 rotate-[25deg] -translate-x-1/2 w-60 select-none pointer-events-none" />
+                <!-- Chat icon dưới khung ảnh -->
                 <img src="{{ asset('occo/home/Badge-2.png') }}" alt="Yêu thích"
-                    class="absolute -top-6 left-2 w-24 select-none pointer-events-none" />
+                    class="absolute bottom-8 left-1/2 -translate-x-1/2 w-20 select-none pointer-events-none" />
             </div>
         </div>
     </div>
