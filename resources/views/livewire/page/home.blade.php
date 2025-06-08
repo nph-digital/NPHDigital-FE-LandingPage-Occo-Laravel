@@ -14,4 +14,5 @@
     </div>
 
     <x-homepage.marquee />
+    <x-homepage.section-live />
 </div>
