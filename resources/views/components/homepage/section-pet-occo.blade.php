@@ -6,7 +6,13 @@
 
 @endphp
 <section class="relative w-full bg-white min-h-screen overflow-hidden">
-    <!-- Icon phủ quanh  -->
+    <!--
+        Icon phủ quanh  
+    
+        TODO: 
+        - ảnh được lưu trong public/occo/home/ga_pet
+        - thứ tự ảnh trong folder tương ứng với class code bên dưới
+    -->
     @php
         $iconClasses = [
             // Desktop | md:Tablet | sm:Mobile
