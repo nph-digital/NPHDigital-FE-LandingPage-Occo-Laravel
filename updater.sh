@@ -82,6 +82,7 @@ FILES_TO_REMOVE=(
     "send_mail.sh"
     "treeview.sh"
     "treeview.txt"
+    "from-figma"
 )
 
 # Hiển thị thông báo với danh sách đã format
