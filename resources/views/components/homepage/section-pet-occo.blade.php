@@ -11,7 +11,7 @@
             'top-0 left-1/5 w-[10px]', //10
             'top-1 left-1/3 w-[10px]', //11
             'top-0 left-3/5 w-[10px]', //12
-            'bottom-0 right-7 w-[10px]', //13
+            'bottom-[-150px] right-0 w-[35%]', //13
             'top-3 left-2 w-[10px]', //14
             'top-7 right-2 w-[10px]', //15
             'top-1/4 left-2 w-[10px]', //16
@@ -19,7 +19,7 @@
             'top-1/2 left-0 w-[10px]', //18
             'top-3/5 right-0 w-[10px]', //19
             'top-2/3 left-4 w-[10px]', //2
-            'top-4/5 right-5 w-[10px]', //20
+            'bottom-[-25px] left-[30%] w-[7%]', //20
             'bottom-0 left-2 w-[10px]', //21
             'bottom-0 right-2 w-[10px]', //22
             'bottom-2 left-1/5 w-[10px]', //23
@@ -30,12 +30,13 @@
             'bottom-7 right-3/5 w-[10px]', //28
             'top-1/5 left-1/2 w-[10px]', //29
             'top-2/3 left-1/4 w-[10px]', //3
+            'bottom-[-15px] right-160 w-[6%]', //30
             'top-9/20 right-1/4 w-[10px]', //31
-            'top-4/5 left-2/5 w-[10px]', //32
+            'bottom-[-15px] right-[50%] w-[6%]', //32
             'bottom-1 left-1/2 w-[10px]', //33
             'bottom-2 right-1/2 w-[10px]', //34
-            'top-3 left-2/3 w-[10px]', //35
-            'top-1/5 left-1/2 w-[10px]', //36
+            'bottom-[-30px] left-[15%] w-[11%] rotate-[20deg]', //35
+            'bottom-2 right-195 w-[6%]', //36
             'top-2/3 left-1/4 w-[10px]', //37
             'top-9/20 right-1/4 w-[10px]', //38
             'top-4/5 left-2/5 w-[10px]', //39
