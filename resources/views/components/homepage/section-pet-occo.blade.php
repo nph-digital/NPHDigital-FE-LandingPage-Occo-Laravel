@@ -1,89 +1,76 @@
 @php
-    $iconDir = public_path('occo/home/gif_pet');
-    $icons = collect(glob($iconDir . '/*.gif'))->map(fn($path) => asset('occo/home/gif_pet/' . basename($path)));
+    $iconDir = public_path('occo/home/ga_pet');
+    $icons = collect(array_merge(glob($iconDir . '/*.gif'), glob($iconDir . '/*.png')))->map(
+        fn($path) => asset('occo/home/ga_pet/' . basename($path)),
+    );
+
 @endphp
 <section class="relative w-full bg-white min-h-screen overflow-hidden">
-    <!-- Icon phủ quanh (absolute, random) + responsive -->
-<style>
-    @media (max-width: 1024px) {
-        .occo-icon-bg { width: 40px !important; }
-    }
-    @media (max-width: 768px) {
-        .occo-icon-bg {
-            width: 28px !important;
-            z-index: 0;
-        }
-        /* Đẩy icon sát mép, tránh che text (vị trí lại gần biên hơn) */
-        .occo-bg-0 { top:1%!important; left:1%!important; }
-        .occo-bg-1 { top:0!important; left:10%!important; }
-        .occo-bg-2 { top:2%!important; left:20%!important; }
-        .occo-bg-3 { top:0!important; left:60%!important; }
-        .occo-bg-4 { top:1%!important; right:1%!important; }
-        .occo-bg-5 { top:8%!important; left:3%!important; }
-        .occo-bg-6 { top:14%!important; right:2%!important; }
-        .occo-bg-7 { top:24%!important; left:1%!important; }
-        .occo-bg-8 { top:28%!important; right:4%!important; }
-        .occo-bg-9 { top:38%!important; left:0!important; }
-        .occo-bg-10 { top:45%!important; right:0!important; }
-        .occo-bg-11 { top:60%!important; left:2%!important; }
-        .occo-bg-12 { top:70%!important; right:2%!important; }
-        .occo-bg-13 { bottom:0!important; left:1%!important; }
-        .occo-bg-14 { bottom:0!important; right:1%!important; }
-        .occo-bg-15 { bottom:6%!important; left:10%!important; }
-        .occo-bg-16 { bottom:10%!important; right:10%!important; }
-        .occo-bg-17 { bottom:14%!important; left:20%!important; }
-        .occo-bg-18 { bottom:18%!important; right:20%!important; }
-        .occo-bg-19 { bottom:22%!important; left:60%!important; }
-        .occo-bg-20 { bottom:26%!important; right:60%!important; }
-        .occo-bg-21 { top:20%!important; left:80%!important; }
-        .occo-bg-22 { top:50%!important; left:85%!important; }
-        .occo-bg-23 { top:55%!important; right:15%!important; }
-        .occo-bg-24 { top:70%!important; left:85%!important; }
-        .occo-bg-25 { bottom:2%!important; left:80%!important; }
-        .occo-bg-26 { bottom:8%!important; right:80%!important; }
-        .occo-bg-27 { top:10%!important; right:80%!important; }
-    }
-    @media (max-width: 480px) {
-        .occo-icon-bg { width: 16px !important; }
-        .occo-section-text { padding-left: 1rem !important; max-width: 95vw !important; }
-    }
-</style>
-<div class="absolute inset-0 pointer-events-none select-none">
-    @foreach ($icons->shuffle()->take(28) as $i => $icon)
-        <img src="{{ $icon }}" alt="occo-bg-{{ $i }}" class="absolute object-contain occo-icon-bg occo-bg-{{ $i }}" style="
-            @switch($i)
-                @case(0) top:2%; left:4%; width:68px; @break
-                @case(1) top:0; left:20%; width:54px; @break
-                @case(2) top:4%; left:34%; width:60px; @break
-                @case(3) top:0; left:60%; width:72px; @break
-                @case(4) top:3%; right:7%; width:64px; @break
-                @case(5) top:12%; left:8%; width:56px; @break
-                @case(6) top:18%; right:2%; width:52px; @break
-                @case(7) top:30%; left:2%; width:62px; @break
-                @case(8) top:36%; right:6%; width:58px; @break
-                @case(9) top:48%; left:0; width:60px; @break
-                @case(10) top:60%; right:0; width:56px; @break
-                @case(11) top:70%; left:4%; width:68px; @break
-                @case(12) top:80%; right:5%; width:60px; @break
-                @case(13) bottom:0; left:2%; width:64px; @break
-                @case(14) bottom:0; right:2%; width:68px; @break
-                @case(15) bottom:8%; left:20%; width:54px; @break
-                @case(16) bottom:12%; right:18%; width:54px; @break
-                @case(17) bottom:18%; left:36%; width:58px; @break
-                @case(18) bottom:24%; right:34%; width:56px; @break
-                @case(19) bottom:30%; left:60%; width:60px; @break
-                @case(20) bottom:36%; right:60%; width:62px; @break
-                @case(21) top:25%; left:50%; width:54px; @break
-                @case(22) top:65%; left:25%; width:52px; @break
-                @case(23) top:55%; right:25%; width:52px; @break
-                @case(24) top:80%; left:40%; width:56px; @break
-                @case(25) bottom:4%; left:50%; width:54px; @break
-                @case(26) bottom:10%; right:50%; width:52px; @break
-                @case(27) top:12%; right:40%; width:54px; @break
-            @endswitch
-        " />
+    <!--
+        Icon phủ quanh
+    
+        TODO:
+        - ảnh được lưu trong public/occo/home/ga_pet
+        - thứ tự ảnh trong folder tương ứng với class code bên dưới
+    -->
+    @php
+        // Mapping thủ công class và tên ảnh, chuẩn Laravel, dễ maintain
+        $iconItems = [
+            ['class' => 'top-[40%] left-0 w-[110px]', 'image' => 'a1.png'],
+            ['class' => 'bottom-72 right-[28%] w-[95px]', 'image' => 'a2.png'],
+            ['class' => 'bottom-[42%] right-[12%] w-[60px] rotate-[20deg]', 'image' => 'a3.png'],
+            ['class' => 'top-[20%] left-[15%] w-[100px] rotate-[30deg]', 'image' => 'a4.png'],
+            ['class' => 'top-[10%] left-[35%] w-[100px]', 'image' => 'a5.png'],
+            ['class' => 'bottom-75 right-0 w-[100px]', 'image' => 'a7.png'],
+            ['class' => 'top-12 right-[8%] w-[140px]', 'image' => 'a8.png'],
+            ['class' => 'bottom-[45%] right-[20%] w-[150px] rotate-[40deg]', 'image' => 'a9.png'],
+            ['class' => 'top-2 right-3 w-[140px]', 'image' => 'a11.png'],
+            ['class' => 'top-[25%] left-[25%] w-[100px]', 'image' => 'a12.png'],
+            ['class' => 'bottom-[-25px] left-[35%] w-[7%]', 'image' => 'g20.gif'],
+            ['class' => 'top-[20%] right-[50%] w-[140px]', 'image' => 'a16.png'],
+            ['class' => 'bottom-75 right-[35%] w-[125px] rotate-[-20deg]', 'image' => 'a20.png'],
+            ['class' => 'top-[20%] right-[40%] w-[140px]', 'image' => 'a23.png'],
+            ['class' => 'bottom-[-15px] right-160 w-[6%]', 'image' => 'a30.png'],
+            ['class' => 'top-[30%] right-0 w-[100px]', 'image' => 'a25.png'],
+            ['class' => 'bottom-[-15px] right-[50%] w-[6%]', 'image' => 'a32.png'],
+            ['class' => 'bottom-40 left-[28%] w-[110px]', 'image' => 'a27.png'],
+            ['class' => 'bottom-2 right-1/2 w-[10px]', 'image' => 'a28.png'],
+            ['class' => 'bottom-[-30px] left-[17%] w-[11%] rotate-[20deg]', 'image' => 'a35.png'],
+            ['class' => 'bottom-2 right-195 w-[6%]', 'image' => 'a36.png'],
+            ['class' => 'bottom-35 right-[35%] w-[105px]', 'image' => 'a26.png'],
+            ['class' => 'top-2 right-[20%] w-[140px]', 'image' => 'a33.png'],
+            ['class' => 'bottom-42 right-[45%] w-[125px]', 'image' => 'a34.png'],
+            ['class' => 'bottom-42 left-[10%] w-[110px]', 'image' => 'a29.png'],
+            ['class' => 'top-[20%] right-[20%] w-[140px]', 'image' => 'a24.png'],
+            ['class' => 'top-5 right-[40%] w-[160px]', 'image' => 'a37.png'],
+            ['class' => 'top-[10%] left-[22%] w-[120px]', 'image' => 'a38.png'],
+            ['class' => 'top-[5%] left-[28%] w-[100px]', 'image' => 'a39.png'],
+            ['class' => 'top-8 right-[28%] w-[160px]', 'image' => 'g6.gif'],
+            ['class' => 'top-[45%] right-[45%] w-[150px]', 'image' => 'g7.gif'],
+            ['class' => 'bottom-42 left-[35%] w-[85px]', 'image' => 'g8.gif'],
+            ['class' => 'bottom-[-150px] right-0 w-[35%]', 'image' => 'g13.gif'],
+            ['class' => 'bottom-[-20px] left-0 w-[120px] rotate-[-35deg]', 'image' => 'a13.png'],
+            ['class' => 'bottom-38 left-[20%] w-[95px]', 'image' => 'g21.gif'],
+            ['class' => 'bottom-8 left-2/3 w-[10px]', 'image' => 'g22.gif'],
+            ['class' => 'top-[32%] right-[10%] w-[140px]', 'image' => 'g27.gif'],
+            ['class' => 'bottom-36 left-[-10px] w-[130px]', 'image' => 'g28.gif'],
+            ['class' => 'top-[20%] left-[5%] w-[120px]', 'image' => 'g33.gif'],
+            ['class' => 'bottom-96 right-5 w-[180px]', 'image' => 'g39.gif'],
+            ['class' => 'top-[36%] right-[32%] w-[180px]', 'image' => 'g22.gif'],
+        ];
+    @endphp
+
+    {{-- Render ảnh với class tương ứng, giữ nguyên layout UI --}}
+    @foreach ($iconItems as $item)
+        <img src="{{ asset('occo/home/ga_pet/' . $item['image']) }}" class="absolute {{ $item['class'] }}" alt="pet icon">
     @endforeach
-</div>
+    <div class="absolute inset-0 pointer-events-none select-none">
+        @foreach ($icons as $i => $icon)
+            <div class="absolute  {{ $iconClasses[$i] ?? 'top-0 left-0 w-[10px]' }}">
+                <img src="{{ $icon }}" alt="occo-bg-{{ $i }}" class="object-contain " />
+            </div>
+        @endforeach
+    </div>
 
     <!-- Text block bên trái -->
     <div class="relative min-h-screen flex flex-col justify-center z-10 max-w-3xl pl-36">
