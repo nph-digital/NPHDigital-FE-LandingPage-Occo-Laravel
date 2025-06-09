@@ -39,7 +39,7 @@
             </div>
             <!-- Pet 2 -->
             <div
-                class="absolute right-[-50px] rotate-[40deg] top-6 w-[100px] sm:left-[90%] sm:top-[-65px] sm:w-[150px] md:w-[180px] transition-all">
+                class="absolute right-[-50px] rotate-[40deg] top-6 w-[100px] sm:left-[80%] sm:top-[-65px] sm:w-[150px] md:w-[180px] transition-all">
                 <img src="{{ asset('occo/home/Gif_(3).gif') }}" alt="Pet 2" class="object-cover">
             </div>
             <!-- Card 1 trái -->
@@ -50,7 +50,7 @@
             <div
                 class="z-10 transition-all">
                 <div class="relative">
-                    <div class="absolute left-[-120px] top-[-120px] w-[210px] sm:w-[480px] md:w-[350px]">
+                    <div class="absolute left-[-120px] top-[-120px] w-[210px] sm:w-[480px] sm:top-[-200px] md:w-[350px]">
                         <img src="{{ asset('occo/home/t2.png') }}" alt="Profile 2" class="object-cover">
                     </div>
                     <img src="{{ asset('occo/home/yeuthich.png') }}" alt="Yêu thích"
@@ -58,7 +58,7 @@
                 </div>
             </div>
             <!-- Card 3 -->
-            <div class="absolute right-[-90px] top-24 w-[200px] sm:right-[-130px] sm:top-12 sm:w-auto z-20 transition-all">
+            <div class="absolute right-[-90px] top-24 w-[200px] sm:right-[-100px] sm:top-12 sm:w-auto z-20 transition-all">
                 <img src="{{ asset('occo/home/t3.png') }}" alt="Profile 3"
                     class="object-cover sm:w-[230px] md:w-[250px]">
             </div>
