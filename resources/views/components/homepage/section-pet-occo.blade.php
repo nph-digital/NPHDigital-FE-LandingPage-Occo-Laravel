@@ -1,7 +1,7 @@
 @php
-    $iconDir = public_path('occo/home/gif_pet');
+    $iconDir = public_path('occo/home/ga_pet');
     $icons = collect(array_merge(glob($iconDir . '/*.gif'), glob($iconDir . '/*.png')))->map(
-        fn($path) => asset('occo/home/gif_pet/' . basename($path)),
+        fn($path) => asset('occo/home/ga_pet/' . basename($path)),
     );
 
 @endphp
