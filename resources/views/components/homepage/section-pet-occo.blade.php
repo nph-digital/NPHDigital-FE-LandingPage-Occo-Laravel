@@ -16,46 +16,47 @@
     @php
         $iconClasses = [
             // Desktop | md:Tablet | sm:Mobile
-            'top-2 left-4 w-[10px]', //1
-            'top-0 left-1/5 w-[10px]', //10
-            'top-1 left-1/3 w-[10px]', //11
-            'top-0 left-3/5 w-[10px]', //12
-            'bottom-[-150px] right-0 w-[35%]', //13
-            'top-3 left-2 w-[10px]', //14
-            'top-7 right-2 w-[10px]', //15
-            'top-1/4 left-2 w-[10px]', //16
-            'top-1/3 right-6 w-[10px]', //17
-            'top-1/2 left-0 w-[10px]', //18
-            'top-3/5 right-0 w-[10px]', //19
-            'top-2/3 left-4 w-[10px]', //2
-            'bottom-[-25px] left-[30%] w-[7%]', //20
-            'bottom-0 left-2 w-[10px]', //21
-            'bottom-0 right-2 w-[10px]', //22
-            'bottom-2 left-1/5 w-[10px]', //23
-            'bottom-3 right-1/5 w-[10px]', //24
-            'bottom-4 left-1/3 w-[10px]', //25
-            'bottom-5 right-1/3 w-[10px]', //26
-            'bottom-6 left-3/5 w-[10px]', //27
-            'bottom-7 right-3/5 w-[10px]', //28
-            'top-1/5 left-1/2 w-[10px]', //29
-            'top-2/3 left-1/4 w-[10px]', //3
-            'bottom-[-15px] right-160 w-[6%]', //30
-            'top-9/20 right-1/4 w-[10px]', //31
-            'bottom-[-15px] right-[50%] w-[6%]', //32
-            'bottom-1 left-1/2 w-[10px]', //33
-            'bottom-2 right-1/2 w-[10px]', //34
-            'bottom-[-30px] left-[15%] w-[11%] rotate-[20deg]', //35
-            'bottom-2 right-195 w-[6%]', //36
-            'top-2/3 left-1/4 w-[10px]', //37
-            'top-9/20 right-1/4 w-[10px]', //38
-            'top-4/5 left-2/5 w-[10px]', //39
-            'bottom-1 left-1/2 w-[10px]', //4
-            'bottom-2 right-1/2 w-[10px]', //5
-            'bottom-4 left-1/3 w-[10px]', //6
-            'bottom-5 right-1/3 w-[10px]', //7
-            'bottom-6 left-3/5 w-[10px]', //8
-            'bottom-7 right-3/5 w-[10px]', //9
-            'bottom-8 left-2/3 w-[10px]', //Sua Chua
+            'top-2 left-4 w-[10px]', //a1
+            'top-0 left-1/5 w-[10px]', //a2
+            'top-1 left-1/3 w-[10px]', //a3
+            'top-0 left-3/5 w-[10px]', //a4
+            'bottom-[-150px] right-0 w-[35%]', //a5
+            'top-7 right-2 w-[10px]', //a7
+            'top-1/4 left-2 w-[10px]', //a8
+            'top-1/3 right-6 w-[10px]', //a9
+            'top-3/5 right-0 w-[10px]', //a11
+            'top-2/3 left-4 w-[10px]', //a12
+            'bottom-[-25px] left-[30%] w-[7%]', //a13
+            'bottom-2 left-1/5 w-[10px]', //a16
+            'bottom-6 left-3/5 w-[10px]', //a20
+            'top-2/3 left-1/4 w-[10px]', //a23
+            'bottom-[-15px] right-160 w-[6%]', //a24
+            'top-9/20 right-1/4 w-[10px]', //a25
+            'bottom-[-15px] right-[50%] w-[6%]', //a26
+            'bottom-1 left-1/2 w-[10px]', //a27
+            'bottom-2 right-1/2 w-[10px]', //a28
+            'bottom-[-30px] left-[15%] w-[11%] rotate-[20deg]', //a29
+            'bottom-2 right-195 w-[6%]', //a30
+            'top-9/20 right-1/4 w-[10px]', //a32
+            'top-4/5 left-2/5 w-[10px]', //a33
+            'bottom-1 left-1/2 w-[10px]', //a34
+            'bottom-2 right-1/2 w-[10px]', //a35
+            'bottom-4 left-1/3 w-[10px]', //a36
+            'bottom-5 right-1/3 w-[10px]', //a37
+            'bottom-6 left-3/5 w-[10px]', //a38
+            'bottom-7 right-3/5 w-[10px]', //a39
+            'bottom-8 left-2/3 w-[10px]', //g6
+            'bottom-8 left-2/3 w-[10px]', //g7
+            'bottom-8 left-2/3 w-[10px]', //g8
+            'bottom-8 left-2/3 w-[10px]', //g13
+            'bottom-8 left-2/3 w-[10px]', //g20
+            'bottom-8 left-2/3 w-[10px]', //g21
+            'bottom-8 left-2/3 w-[10px]', //g22
+            'bottom-8 left-2/3 w-[10px]', //g27
+            'bottom-8 left-2/3 w-[10px]', //g28
+            'bottom-8 left-2/3 w-[10px]', //g29
+            'bottom-8 left-2/3 w-[10px]', //g33
+            'bottom-8 left-2/3 w-[10px]', //g39
         ];
     @endphp
     <div class="absolute inset-0 pointer-events-none select-none">
