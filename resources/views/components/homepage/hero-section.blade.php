@@ -12,7 +12,7 @@
             Thiên Ý dẫn lối – bạn chỉ cần chạm!
         </p>
         <!-- Download Buttons -->
-        <div class="grid grid-cols-2 sm:grid-cols-2 gap-3 w-full max-w-md">
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <a href="#" class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
                 <img src="{{ asset('occo/home/chplay.png') }}" alt="CH Play" class="mr-2 w-6">
                 <span class="text-xs text-gray-900 font-semibold leading-4">Download on the<br><span
@@ -61,7 +61,7 @@
     </div>
 
     <!-- BOTTOM GIF -->
-    <div class="absolute right-5 sm:right-[250px] z-10 bottom-[-60px] sm:bottom-[-100px]">
-        <img src="{{ asset('occo/home/Gif_(18).gif') }}" alt="Decoration" class="object-cover w-[220px] sm:w-[350px]">
+    <div class="absolute right-5 lg:right-[250px] z-10 bottom-[-60px] lg:bottom-[-100px]">
+        <img src="{{ asset('occo/home/Gif_(18).gif') }}" alt="Decoration" class="object-cover w-[220px] lg:w-[350px]">
     </div>
 </div>
