@@ -1,6 +1,9 @@
 @php
     $iconDir = public_path('occo/home/gif_pet');
-    $icons = collect(glob($iconDir . '/*.gif'))->map(fn($path) => asset('occo/home/gif_pet/' . basename($path)));
+    $icons = collect(array_merge(glob($iconDir . '/*.gif'), glob($iconDir . '/*.png')))->map(
+        fn($path) => asset('occo/home/gif_pet/' . basename($path)),
+    );
+
 @endphp
 <section class="relative w-full bg-white min-h-screen overflow-hidden">
     <!-- Icon phủ quanh  -->
