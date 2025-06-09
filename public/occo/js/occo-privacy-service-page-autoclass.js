@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
     container.querySelectorAll('h2').forEach(h2 => {
         h2.classList.add('text-xl', 'md:text-2xl', 'font-bold', 'text-[#824DFF]', 'mb-5', 'mt-8');
     });
-
+ container.querySelectorAll('h3').forEach(h2 => {
+        h2.classList.add('text-md', 'md:text-xl', 'font-bold', 'text-[#824DFF]', 'mb-3', 'mt-5');
+    });
     // Tự động thêm class cho tất cả ol
     container.querySelectorAll('ol').forEach(ol => {
         ol.classList.add('list-decimal', 'list-inside', 'space-y-2');
