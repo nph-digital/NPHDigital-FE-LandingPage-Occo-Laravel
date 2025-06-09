@@ -1,8 +1,10 @@
 <header
     class="fixed top-0 z-20 w-full px-6 md:px-24 py-4 mx-auto flex items-center justify-between shadow-lg backdrop-blur-lg bg-gradient-to-b from-[#a48cf0]/80 to-transparent transition-all duration-300">
     <div class="flex items-center gap-3">
-        <img src="{{ asset('occo/logo.png') }}" alt="OCCO Logo"
-            class="h-10 transition-transform duration-300 hover:scale-110 hover:rotate-2 cursor-pointer" />
+        <a href="{{ Route::has('home') ? route('home') : '#' }}">
+            <img src="{{ asset('occo/logo.png') }}" alt="OCCO Logo"
+                class="h-10 transition-transform duration-300 hover:scale-110 hover:rotate-2 cursor-pointer" />
+        </a>
         <div class="flex flex-col">
             <span class="font-bold text-lg leading-5 text-white">OCCO</span>
             <span class="text-xs text-white/70 leading-3">Mạng xã hội công nghệ</span>
@@ -10,7 +12,7 @@
     </div>
 
     <!-- Desktop Navigation -->
-    <div class="hidden md:flex items-center gap-7">
+    <div class="hidden lg:flex items-center gap-7">
         <nav class="flex gap-6 text-base font-medium">
             <style>
                 .nav-anim {
@@ -106,17 +108,22 @@
                 }
             </style>
             <a href="{{ Route::has('home') ? route('home') : '#' }}"
-                class="nav-anim border-b-2 border-white pb-1 text-white">Giới thiệu</a>
-            <a href="{{ Route::has('privacy') ? route('privacy') : '#' }}" class="nav-anim text-white">Chính sách bảo
-                mật</a>
+                class="nav-anim text-white pb-1 {{ request()->routeIs('home') ? 'border-b-2 border-white' : '' }}">Giới
+                thiệu</a>
+            <a href="{{ Route::has('privacy') ? route('privacy') : '#' }}"
+                class="nav-anim text-white pb-1 {{ request()->routeIs('privacy') ? 'border-b-2 border-white' : '' }}">Chính
+                sách bảo mật</a>
             <a href="{{ Route::has('service-agreement') ? route('service-agreement') : '#' }}"
-                class="nav-anim text-white">Thỏa thuận dịch vụ</a>
-            <a href="{{ Route::has('contact') ? route('contact') : '#' }}" class="nav-anim text-white">Liên hệ ngay</a>
+                class="nav-anim text-white pb-1 {{ request()->routeIs('service-agreement') ? 'border-b-2 border-white' : '' }}">Thỏa
+                thuận dịch vụ</a>
+            <a href="{{ Route::has('contact') ? route('contact') : '#' }}"
+                class="nav-anim text-white pb-1 {{ request()->routeIs('contact') ? 'border-b-2 border-white' : '' }}">Liên
+                hệ ngay</a>
         </nav>
     </div>
 
     <!-- Mobile Menu Button -->
-    <div class="md:hidden">
+    <div class="lg:hidden">
         <button class="hamburger" onclick="toggleMobileMenu()">
             <span></span>
             <span></span>
@@ -138,13 +145,17 @@
             </div>
             <nav class="flex flex-col gap-6">
                 <a href="{{ Route::has('home') ? route('home') : '#' }}"
-                    class="text-white text-lg font-medium hover:text-white/80 transition">Giới thiệu</a>
+                    class="text-white text-lg font-medium hover:text-white/80 transition pb-1 {{ request()->routeIs('home') ? 'border-b-2 border-white' : '' }}">Giới
+                    thiệu</a>
                 <a href="{{ Route::has('privacy') ? route('privacy') : '#' }}"
-                    class="text-white text-lg font-medium hover:text-white/80 transition">Chính sách bảo mật</a>
+                    class="text-white text-lg font-medium hover:text-white/80 transition pb-1 {{ request()->routeIs('privacy') ? 'border-b-2 border-white' : '' }}">Chính
+                    sách bảo mật</a>
                 <a href="{{ Route::has('service-agreement') ? route('service-agreement') : '#' }}"
-                    class="text-white text-lg font-medium hover:text-white/80 transition">Thỏa thuận dịch vụ</a>
+                    class="text-white text-lg font-medium hover:text-white/80 transition pb-1 {{ request()->routeIs('service-agreement') ? 'border-b-2 border-white' : '' }}">Thỏa
+                    thuận dịch vụ</a>
                 <a href="{{ Route::has('contact') ? route('contact') : '#' }}"
-                    class="text-white text-lg font-medium hover:text-white/80 transition">Liên hệ ngay</a>
+                    class="text-white text-lg font-medium hover:text-white/80 transition pb-1 {{ request()->routeIs('contact') ? 'border-b-2 border-white' : '' }}">Liên
+                    hệ ngay</a>
             </nav>
         </div>
     </div>
