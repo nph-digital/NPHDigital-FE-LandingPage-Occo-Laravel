@@ -14,27 +14,15 @@
         <!-- Download Buttons -->
         <div class="grid grid-cols-2 sm:grid-cols-2 gap-3 w-full max-w-md">
             <a href="#" class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
-                <img src="{{ asset('occo/home/chplay.png') }}" alt="CH Play" class="mr-2 w-6 h-6">
+                <img src="{{ asset('occo/home/chplay.png') }}" alt="CH Play" class="mr-2 w-6">
                 <span class="text-xs text-gray-900 font-semibold leading-4">Download on the<br><span
                         class="text-lg font-bold">CH Play</span></span>
             </a>
             <a href="#"
                 class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
-                <img src="{{ asset('occo/home/apple.png') }}" alt="App Store" class="mr-2 w-6 h-6">
+                <img src="{{ asset('occo/home/apple.png') }}" alt="App Store" class="mr-2 w-6">
                 <span class="text-xs text-gray-900 font-semibold leading-4">Download on the<br><span
                         class="text-lg font-bold">App Store</span></span>
-            </a>
-            <a href="#"
-                class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
-                <img src="{{ asset('occo/home/windows.png') }}" alt="Window" class="mr-2 w-6 h-6">
-                <span class="text-xs text-gray-900 font-semibold leading-4">Download on the<br><span
-                        class="text-lg font-bold">Window</span></span>
-            </a>
-            <a href="#"
-                class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
-                <img src="{{ asset('occo/home/apple.png') }}" alt="Mac OS" class="mr-2 w-6 h-6">
-                <span class="text-xs text-gray-900 font-semibold leading-4">Download on the<br><span
-                        class="text-lg font-bold">Mac OS</span></span>
             </a>
         </div>
     </div>
