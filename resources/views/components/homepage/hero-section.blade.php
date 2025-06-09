@@ -1,4 +1,40 @@
 <div class="relative z-10 container mx-auto px-4 pt-8 pb-12 flex flex-col-reverse lg:flex-row items-center min-h-screen">
+    <!-- BG DOTS EFFECT -->
+    <div class="absolute inset-0 z-0 pointer-events-none">
+        <!-- Dot 1 -->
+        <style>
+            .dot-gradient {
+                width: 6px;
+                height: 6px;
+                border-radius: 9999px;
+                background: radial-gradient(circle, #D6BDFF 0%, #7B2CFF 100%);
+                box-shadow: 0 0 5.77px 0 rgba(255, 255, 255, 0.38);
+            }
+        </style>
+        <div class="absolute top-1/4 left-1/4 dot-gradient"></div>
+        <!-- Dot 2 -->
+        <div class="absolute top-2/3 left-1/3 dot-gradient"></div>
+        <!-- Dot 3 -->
+        <div class="absolute top-1/2 left-2/3 dot-gradient"></div>
+        <!-- Dot 4 -->
+        <div class="absolute top-[80%] left-[60%] dot-gradient"></div>
+        <!-- Dot 5 -->
+        <div class="absolute top-1/3 left-[80%] dot-gradient"></div>
+        <!-- Dot 6 -->
+        <div class="absolute top-[15%] left-[70%] dot-gradient"></div>
+        <!-- Dot 7 -->
+        <div class="absolute top-[60%] left-[10%] dot-gradient"></div>
+        <!-- Dot 8 -->
+        <div class="absolute top-[10%] left-[15%] dot-gradient"></div>
+        <!-- Dot 9 -->
+        <div class="absolute top-[40%] left-[10%] dot-gradient"></div>
+        <!-- Dot 10 -->
+        <div class="absolute top-[85%] left-[30%] dot-gradient"></div>
+        <!-- Dot 11 -->
+        <div class="absolute top-[70%] left-[80%] dot-gradient"></div>
+        <!-- Dot 12 -->
+        <div class="absolute top-[55%] left-[55%] dot-gradient"></div>
+    </div>
     <!-- LEFT: TEXT -->
     <div class="w-full lg:flex-[2.5] flex flex-col justify-center items-start max-w-3xl mt-10 lg:mt-0">
         <h1
@@ -13,7 +49,8 @@
         </p>
         <!-- Download Buttons -->
         <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
-            <a href="#" class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
+            <a href="#"
+                class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
                 <img src="{{ asset('occo/home/chplay.png') }}" alt="CH Play" class="mr-2 w-6">
                 <span class="text-xs text-gray-900 font-semibold leading-4">Download on the<br><span
                         class="text-lg font-bold">CH Play</span></span>
@@ -47,10 +84,10 @@
                 <img src="{{ asset('occo/home/t1.png') }}" alt="Profile 1" class="object-cover">
             </div>
             <!-- Card 2 (center, lớn nhất) -->
-            <div
-                class="z-10 transition-all">
+            <div class="z-10 transition-all">
                 <div class="relative">
-                    <div class="absolute left-[-120px] top-[-120px] w-[210px] sm:w-[480px] sm:top-[-200px] md:w-[350px]">
+                    <div
+                        class="absolute left-[-120px] top-[-120px] w-[210px] sm:w-[480px] sm:top-[-200px] md:w-[350px]">
                         <img src="{{ asset('occo/home/t2.png') }}" alt="Profile 2" class="object-cover">
                     </div>
                     <img src="{{ asset('occo/home/yeuthich.png') }}" alt="Yêu thích"
@@ -58,7 +95,8 @@
                 </div>
             </div>
             <!-- Card 3 -->
-            <div class="absolute right-[-90px] top-24 w-[200px] sm:right-[-100px] sm:top-12 sm:w-auto z-20 transition-all">
+            <div
+                class="absolute right-[-90px] top-24 w-[200px] sm:right-[-100px] sm:top-12 sm:w-auto z-20 transition-all">
                 <img src="{{ asset('occo/home/t3.png') }}" alt="Profile 3"
                     class="object-cover sm:w-[230px] md:w-[250px]">
             </div>
