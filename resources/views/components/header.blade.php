@@ -108,17 +108,15 @@
                 }
             </style>
             <a href="{{ Route::has('home') ? route('home') : '#' }}"
-                class="nav-anim text-white pb-1 {{ request()->routeIs('home') ? 'border-b-2 border-white' : '' }}">Giới
-                thiệu</a>
+                class="nav-anim text-white pb-1 {{ request()->routeIs('home') ? 'border-b-2 border-white' : '' }}">Trang chủ</a>
             <a href="{{ Route::has('privacy') ? route('privacy') : '#' }}"
-                class="nav-anim text-white pb-1 {{ request()->routeIs('privacy') ? 'border-b-2 border-white' : '' }}">Chính
-                sách bảo mật</a>
+                class="nav-anim text-white pb-1 {{ request()->routeIs('privacy') ? 'border-b-2 border-white' : '' }}">Chính sách bảo mật</a>
             <a href="{{ Route::has('service-agreement') ? route('service-agreement') : '#' }}"
-                class="nav-anim text-white pb-1 {{ request()->routeIs('service-agreement') ? 'border-b-2 border-white' : '' }}">Thỏa
-                thuận dịch vụ</a>
+                class="nav-anim text-white pb-1 {{ request()->routeIs('service-agreement') ? 'border-b-2 border-white' : '' }}">Thỏa thuận dịch vụ</a>
+            <a href="{{ Route::has('about') ? route('about') : '#' }}"
+                class="nav-anim text-white pb-1 {{ request()->routeIs('about') ? 'border-b-2 border-white' : '' }}">Về chúng tôi</a>
             <a href="{{ Route::has('contact') ? route('contact') : '#' }}"
-                class="nav-anim text-white pb-1 {{ request()->routeIs('contact') ? 'border-b-2 border-white' : '' }}">Liên
-                hệ ngay</a>
+                class="nav-anim text-white pb-1 {{ request()->routeIs('contact') ? 'border-b-2 border-white' : '' }}">Liên hệ ngay</a>
         </nav>
     </div>
 
@@ -145,17 +143,15 @@
             </div>
             <nav class="flex flex-col gap-6">
                 <a href="{{ Route::has('home') ? route('home') : '#' }}"
-                    class="text-white text-lg font-medium hover:text-white/80 transition pb-1 {{ request()->routeIs('home') ? 'border-b-2 border-white' : '' }}">Giới
-                    thiệu</a>
+                    class="text-white text-lg font-medium hover:text-white/80 transition pb-1 {{ request()->routeIs('home') ? 'border-b-2 border-white' : '' }}">Trang chủ</a>
                 <a href="{{ Route::has('privacy') ? route('privacy') : '#' }}"
-                    class="text-white text-lg font-medium hover:text-white/80 transition pb-1 {{ request()->routeIs('privacy') ? 'border-b-2 border-white' : '' }}">Chính
-                    sách bảo mật</a>
+                    class="text-white text-lg font-medium hover:text-white/80 transition pb-1 {{ request()->routeIs('privacy') ? 'border-b-2 border-white' : '' }}">Chính sách bảo mật</a>
                 <a href="{{ Route::has('service-agreement') ? route('service-agreement') : '#' }}"
-                    class="text-white text-lg font-medium hover:text-white/80 transition pb-1 {{ request()->routeIs('service-agreement') ? 'border-b-2 border-white' : '' }}">Thỏa
-                    thuận dịch vụ</a>
+                    class="text-white text-lg font-medium hover:text-white/80 transition pb-1 {{ request()->routeIs('service-agreement') ? 'border-b-2 border-white' : '' }}">Thỏa thuận dịch vụ</a>
+                <a href="{{ Route::has('about') ? route('about') : '#' }}"
+                    class="text-white text-lg font-medium hover:text-white/80 transition pb-1 {{ request()->routeIs('about') ? 'border-b-2 border-white' : '' }}">Về chúng tôi</a>
                 <a href="{{ Route::has('contact') ? route('contact') : '#' }}"
-                    class="text-white text-lg font-medium hover:text-white/80 transition pb-1 {{ request()->routeIs('contact') ? 'border-b-2 border-white' : '' }}">Liên
-                    hệ ngay</a>
+                    class="text-white text-lg font-medium hover:text-white/80 transition pb-1 {{ request()->routeIs('contact') ? 'border-b-2 border-white' : '' }}">Liên hệ ngay</a>
             </nav>
         </div>
     </div>
