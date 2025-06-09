@@ -83,6 +83,7 @@ FILES_TO_REMOVE=(
     "treeview.sh"
     "treeview.txt"
     "from-figma"
+    ".htaccess"
 )
 
 # Hiển thị thông báo với danh sách đã format
