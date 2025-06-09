@@ -54,7 +54,6 @@
             ['class' => 'bottom-8 left-2/3 w-[10px]', 'image' => 'g22.gif'],
             ['class' => 'top-[32%] right-[10%] w-[140px]', 'image' => 'g27.gif'],
             ['class' => 'bottom-36 left-[-10px] w-[130px]', 'image' => 'g28.gif'],
-            ['class' => 'bottom-8 left-2/3 w-[10px]', 'image' => 'g29.gif'],
             ['class' => 'top-[20%] left-[5%] w-[120px]', 'image' => 'g33.gif'],
             ['class' => 'bottom-96 right-5 w-[180px]', 'image' => 'g39.gif'],
             ['class' => 'top-[36%] right-[32%] w-[180px]', 'image' => 'g22.gif'],
