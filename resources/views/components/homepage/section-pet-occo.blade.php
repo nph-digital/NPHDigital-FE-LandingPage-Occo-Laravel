@@ -6,6 +6,12 @@
 
 @endphp
 <section class="relative w-full bg-white min-h-screen overflow-hidden">
+    <!-- Responsive: padding nhỏ hơn trên mobile, giữ nguyên desktop -->
+    <div class="absolute inset-0 pointer-events-none select-none">
+        @foreach ($icons as $i => $icon)
+            <div class="absolute {{ $iconClasses[$i] ?? 'top-0 left-0 w-[10px]' }}"></div>
+        @endforeach
+    </div>
     <!--
         Icon phủ quanh
     
@@ -64,25 +70,15 @@
     @foreach ($iconItems as $item)
         <img src="{{ asset('occo/home/ga_pet/' . $item['image']) }}" class="absolute {{ $item['class'] }}" alt="pet icon">
     @endforeach
-    <div class="absolute inset-0 pointer-events-none select-none">
-        @foreach ($icons as $i => $icon)
-            <div class="absolute  {{ $iconClasses[$i] ?? 'top-0 left-0 w-[10px]' }}">
-                <img src="{{ $icon }}" alt="occo-bg-{{ $i }}" class="object-contain " />
-            </div>
-        @endforeach
-    </div>
 
     <!-- Text block bên trái -->
-    <div class="relative min-h-screen flex flex-col justify-center z-10 max-w-3xl pl-36">
-        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
-            <span class="bg-gradient-to-r from-[#EB77C5] to-[#FFD7A9] bg-clip-text text-transparent">Bé Gà Occo
-                siêu</span><br>
-            <span class="bg-gradient-to-r from-[#EB77C5] to-[#FFD7A9] bg-clip-text text-transparent">Dễ Thương đã xuất
-                hiện!</span>
+    <div class="relative min-h-screen flex flex-col justify-center z-10 max-w-3xl pl-6 md:pl-24 lg:pl-36 pr-4 md:pr-0">
+        <h2 class="text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight mb-4">
+            <span class="bg-gradient-to-r from-[#EB77C5] to-[#FFD7A9] bg-clip-text text-transparent">Bé Gà Occo siêu</span><br>
+            <span class="bg-gradient-to-r from-[#EB77C5] to-[#FFD7A9] bg-clip-text text-transparent">Dễ Thương đã xuất hiện!</span>
         </h2>
-        <p class="text-gray-700 text-base md:text-md">
-            Biểu cảm siêu đáng yêu: Occo là chú gà nhỏ với cả thế giới cảm xúc trong chiếc mỏ xinh xắn. Từ vui vẻ, buồn
-            bã, tò mò đến hài hước – Occo đều thể hiện thật hoàn hảo!
+        <p class="text-gray-700 text-sm sm:text-base md:text-md mt-2 md:mt-0">
+            Biểu cảm siêu đáng yêu: Occo là chú gà nhỏ với cả thế giới cảm xúc trong chiếc mỏ xinh xắn. Từ vui vẻ, buồn bã, tò mò đến hài hước – Occo đều thể hiện thật hoàn hảo!
         </p>
     </div>
 </section>
