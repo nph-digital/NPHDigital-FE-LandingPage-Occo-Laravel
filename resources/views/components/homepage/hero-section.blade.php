@@ -29,33 +29,36 @@
 
     <!-- RIGHT: IMAGE HERO -->
     <div class="w-full lg:flex-1 flex justify-center items-center relative">
-        <div class="relative flex justify-center items-center w-[260px] sm:w-[320px] md:w-[340px] h-[340px] z-20">
-            <!-- Pet 1 -->
+        <!-- Responsive HERO IMAGE WRAPPER -->
+        <div
+            class="relative flex justify-center items-center w-[220px] sm:w-[320px] md:w-[340px] h-[320px] sm:h-[340px] z-20">
+            <!-- Pet 1 hello -->
             <div
-                class="absolute left-0 sm:left-5 rotate-[-10deg] top-[-100px] sm:top-[-120px] w-[120px] sm:w-[150px] md:w-[180px]">
+                class="absolute left-1 rotate-[-10deg] top-[-60px] w-[80px] sm:left-[-25px] sm:top-[-105px] sm:w-[150px] md:w-[180px] transition-all">
                 <img src="{{ asset('occo/home/Gif_(30).gif') }}" alt="Pet 1" class="object-cover">
             </div>
             <!-- Pet 2 -->
             <div
-                class="absolute left-[60%] rotate-[30deg] top-[-40px] sm:top-[-50px] w-[120px] sm:w-[150px] md:w-[180px]">
+                class="absolute right-2 rotate-[40deg] top-[-30px] w-[80px] sm:left-[90%] sm:top-[-65px] sm:w-[150px] md:w-[180px] transition-all">
                 <img src="{{ asset('occo/home/Gif_(3).gif') }}" alt="Pet 2" class="object-cover">
             </div>
-            <!-- Card 1 -->
-            <div class="absolute left-0 top-8 w-[100px] sm:w-auto">
+            <!-- Card 1 trái -->
+            <div class="absolute left-2 top-16 w-[70px] sm:left-[-50px] sm:top-8 sm:w-auto transition-all">
                 <img src="{{ asset('occo/home/t1.png') }}" alt="Profile 1" class="object-cover">
             </div>
-            <!-- Card 2 -->
-            <div class="absolute left-[60px] sm:left-[75px] top-0 z-10">
+            <!-- Card 2 (center, lớn nhất) -->
+            <div
+                class="absolute left-1/2 top-6 -translate-x-1/2 z-10 sm:left-[55px] sm:top-[-50px] sm:translate-x-0 transition-all">
                 <div class="relative">
                     <img src="{{ asset('occo/home/t2.png') }}" alt="Profile 2"
-                        class="object-cover w-[180px] sm:w-[250px]">
+                        class="object-cover w-[120px] sm:w-[480px] md:w-[350px]">
                     <img src="{{ asset('occo/home/yeuthich.png') }}" alt="Yêu thích"
-                        class="absolute top-[-10px] left-0 w-[150px] sm:w-[200px] z-20 select-none pointer-events-none" />
+                        class="absolute top-[-10px] left-0 w-[90px] sm:w-[250px] sm:left-[-40px] md:w-[250px] z-20 select-none pointer-events-none" />
                 </div>
             </div>
             <!-- Card 3 -->
-            <div class="absolute right-[-80px] sm:right-[-125px] z-20 top-16">
-                <img src="{{ asset('occo/home/t3.png') }}" alt="Profile 3" class="object-cover w-[120px] sm:w-auto">
+            <div class="absolute right-2 top-24 w-[70px] sm:right-[-130px] sm:top-12 sm:w-auto z-20 transition-all">
+                <img src="{{ asset('occo/home/t3.png') }}" alt="Profile 3" class="object-cover sm:w-[230px] md:w-[250px]">
             </div>
         </div>
     </div>
