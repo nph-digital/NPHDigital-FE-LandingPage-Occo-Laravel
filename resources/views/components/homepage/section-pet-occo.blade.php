@@ -68,17 +68,22 @@
 
     {{-- Render ảnh với class tương ứng, giữ nguyên layout UI --}}
     @foreach ($iconItems as $item)
-        <img src="{{ asset('occo/home/ga_pet/' . $item['image']) }}" class="absolute {{ $item['class'] }}" alt="pet icon">
+        <img src="{{ asset('occo/home/ga_pet/' . $item['image']) }}"
+            class="absolute {{ $item['class'] }} w-[32px] xs:w-[40px] sm:w-[60px] md:w-auto max-w-[18vw] md:max-w-none pointer-events-none select-none"
+            alt="pet icon">
     @endforeach
 
     <!-- Text block bên trái -->
     <div class="relative min-h-screen flex flex-col justify-center z-10 max-w-3xl pl-6 md:pl-24 lg:pl-36 pr-4 md:pr-0">
         <h2 class="text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight mb-4">
-            <span class="bg-gradient-to-r from-[#EB77C5] to-[#FFD7A9] bg-clip-text text-transparent">Bé Gà Occo siêu</span><br>
-            <span class="bg-gradient-to-r from-[#EB77C5] to-[#FFD7A9] bg-clip-text text-transparent">Dễ Thương đã xuất hiện!</span>
+            <span class="bg-gradient-to-r from-[#EB77C5] to-[#FFD7A9] bg-clip-text text-transparent">Bé Gà Occo
+                siêu</span><br>
+            <span class="bg-gradient-to-r from-[#EB77C5] to-[#FFD7A9] bg-clip-text text-transparent">Dễ Thương đã xuất
+                hiện!</span>
         </h2>
         <p class="text-gray-700 text-sm sm:text-base md:text-md mt-2 md:mt-0">
-            Biểu cảm siêu đáng yêu: Occo là chú gà nhỏ với cả thế giới cảm xúc trong chiếc mỏ xinh xắn. Từ vui vẻ, buồn bã, tò mò đến hài hước – Occo đều thể hiện thật hoàn hảo!
+            Biểu cảm siêu đáng yêu: Occo là chú gà nhỏ với cả thế giới cảm xúc trong chiếc mỏ xinh xắn. Từ vui vẻ, buồn
+            bã, tò mò đến hài hước – Occo đều thể hiện thật hoàn hảo!
         </p>
     </div>
 </section>
