@@ -7,58 +7,63 @@
 @endphp
 <section class="relative w-full bg-white min-h-screen overflow-hidden">
     <!--
-        Icon phủ quanh  
+        Icon phủ quanh
     
-        TODO: 
+        TODO:
         - ảnh được lưu trong public/occo/home/ga_pet
         - thứ tự ảnh trong folder tương ứng với class code bên dưới
     -->
     @php
-        $iconClasses = [
-            // Desktop | md:Tablet | sm:Mobile
-            'top-2 left-4 w-[10px]', //a1
-            'top-0 left-1/5 w-[10px]', //a2
-            'top-1 left-1/3 w-[10px]', //a3
-            'top-0 left-3/5 w-[10px]', //a4
-            'bottom-[-150px] right-0 w-[35%]', //a5
-            'top-7 right-2 w-[10px]', //a7
-            'top-1/4 left-2 w-[10px]', //a8
-            'top-1/3 right-6 w-[10px]', //a9
-            'top-3/5 right-0 w-[10px]', //a11
-            'top-2/3 left-4 w-[10px]', //a12
-            'bottom-[-25px] left-[30%] w-[7%]', //a13
-            'bottom-2 left-1/5 w-[10px]', //a16
-            'bottom-6 left-3/5 w-[10px]', //a20
-            'top-2/3 left-1/4 w-[10px]', //a23
-            'bottom-[-15px] right-160 w-[6%]', //a24
-            'top-9/20 right-1/4 w-[10px]', //a25
-            'bottom-[-15px] right-[50%] w-[6%]', //a26
-            'bottom-1 left-1/2 w-[10px]', //a27
-            'bottom-2 right-1/2 w-[10px]', //a28
-            'bottom-[-30px] left-[15%] w-[11%] rotate-[20deg]', //a29
-            'bottom-2 right-195 w-[6%]', //a30
-            'top-9/20 right-1/4 w-[10px]', //a32
-            'top-4/5 left-2/5 w-[10px]', //a33
-            'bottom-1 left-1/2 w-[10px]', //a34
-            'bottom-2 right-1/2 w-[10px]', //a35
-            'bottom-4 left-1/3 w-[10px]', //a36
-            'bottom-5 right-1/3 w-[10px]', //a37
-            'bottom-6 left-3/5 w-[10px]', //a38
-            'bottom-7 right-3/5 w-[10px]', //a39
-            'bottom-8 left-2/3 w-[10px]', //g6
-            'bottom-8 left-2/3 w-[10px]', //g7
-            'bottom-8 left-2/3 w-[10px]', //g8
-            'bottom-8 left-2/3 w-[10px]', //g13
-            'bottom-8 left-2/3 w-[10px]', //g20
-            'bottom-8 left-2/3 w-[10px]', //g21
-            'bottom-8 left-2/3 w-[10px]', //g22
-            'bottom-8 left-2/3 w-[10px]', //g27
-            'bottom-8 left-2/3 w-[10px]', //g28
-            'bottom-8 left-2/3 w-[10px]', //g29
-            'bottom-8 left-2/3 w-[10px]', //g33
-            'bottom-8 left-2/3 w-[10px]', //g39
+        // Mapping thủ công class và tên ảnh, chuẩn Laravel, dễ maintain
+        $iconItems = [
+            ['class' => 'top-2 left-4 w-[10px]', 'image' => 'a1.png'],
+            ['class' => 'top-0 left-1/5 w-[10px]', 'image' => 'a2.png'],
+            ['class' => 'top-1 left-1/3 w-[10px]', 'image' => 'a3.png'],
+            ['class' => 'top-0 left-3/5 w-[10px]', 'image' => 'a4.png'],
+            ['class' => 'bottom-[-150px] right-0 w-[35%]', 'image' => 'a5.png'],
+            ['class' => 'top-7 right-2 w-[10px]', 'image' => 'a7.png'],
+            ['class' => 'top-1/4 left-2 w-[10px]', 'image' => 'a8.png'],
+            ['class' => 'top-1/3 right-6 w-[10px]', 'image' => 'a9.png'],
+            ['class' => 'top-3/5 right-0 w-[10px]', 'image' => 'a11.png'],
+            ['class' => 'top-2/3 left-4 w-[10px]', 'image' => 'a12.png'],
+            ['class' => 'bottom-[-25px] left-[30%] w-[7%]', 'image' => 'a13.png'],
+            ['class' => 'bottom-2 left-1/5 w-[10px]', 'image' => 'a16.png'],
+            ['class' => 'bottom-6 left-3/5 w-[10px]', 'image' => 'a20.png'],
+            ['class' => 'top-2/3 left-1/4 w-[10px]', 'image' => 'a23.png'],
+            ['class' => 'bottom-[-15px] right-160 w-[6%]', 'image' => 'a24.png'],
+            ['class' => 'top-9/20 right-1/4 w-[10px]', 'image' => 'a25.png'],
+            ['class' => 'bottom-[-15px] right-[50%] w-[6%]', 'image' => 'a26.png'],
+            ['class' => 'bottom-1 left-1/2 w-[10px]', 'image' => 'a27.png'],
+            ['class' => 'bottom-2 right-1/2 w-[10px]', 'image' => 'a28.png'],
+            ['class' => 'bottom-[-30px] left-[15%] w-[11%] rotate-[20deg]', 'image' => 'a29.png'],
+            ['class' => 'bottom-2 right-195 w-[6%]', 'image' => 'a30.png'],
+            ['class' => 'top-9/20 right-1/4 w-[10px]', 'image' => 'a32.png'],
+            ['class' => 'top-4/5 left-2/5 w-[10px]', 'image' => 'a33.png'],
+            ['class' => 'bottom-1 left-1/2 w-[10px]', 'image' => 'a34.png'],
+            ['class' => 'bottom-2 right-1/2 w-[10px]', 'image' => 'a35.png'],
+            ['class' => 'bottom-4 left-1/3 w-[10px]', 'image' => 'a36.png'],
+            ['class' => 'bottom-5 right-1/3 w-[10px]', 'image' => 'a37.png'],
+            ['class' => 'bottom-6 left-3/5 w-[10px]', 'image' => 'a38.png'],
+            ['class' => 'bottom-7 right-3/5 w-[10px]', 'image' => 'a39.png'],
+            ['class' => 'bottom-8 left-2/3 w-[10px]', 'image' => 'g6.gif'],
+            ['class' => 'bottom-8 left-2/3 w-[10px]', 'image' => 'g7.gif'],
+            ['class' => 'bottom-8 left-2/3 w-[10px]', 'image' => 'g8.gif'],
+            ['class' => 'bottom-8 left-2/3 w-[10px]', 'image' => 'g13.gif'],
+            ['class' => 'bottom-8 left-2/3 w-[10px]', 'image' => 'g20.gif'],
+            ['class' => 'bottom-8 left-2/3 w-[10px]', 'image' => 'g21.gif'],
+            ['class' => 'bottom-8 left-2/3 w-[10px]', 'image' => 'g22.gif'],
+            ['class' => 'bottom-8 left-2/3 w-[10px]', 'image' => 'g27.gif'],
+            ['class' => 'bottom-8 left-2/3 w-[10px]', 'image' => 'g28.gif'],
+            ['class' => 'bottom-8 left-2/3 w-[10px]', 'image' => 'g29.gif'],
+            ['class' => 'bottom-8 left-2/3 w-[10px]', 'image' => 'g33.gif'],
+            ['class' => 'bottom-8 left-2/3 w-[10px]', 'image' => 'g39.gif'],
         ];
     @endphp
+
+    {{-- Render ảnh với class tương ứng, giữ nguyên layout UI --}}
+    @foreach ($iconItems as $item)
+        <img src="{{ asset('occo/home/ga_pet/' . $item['image']) }}" class="absolute {{ $item['class'] }}" alt="pet icon">
+    @endforeach
     <div class="absolute inset-0 pointer-events-none select-none">
         @foreach ($icons as $i => $icon)
             <div class="absolute  {{ $iconClasses[$i] ?? 'top-0 left-0 w-[10px]' }}">
