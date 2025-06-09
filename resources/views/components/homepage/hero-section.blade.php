@@ -34,7 +34,7 @@
             class="relative flex justify-center items-center w-[220px] sm:w-[320px] md:w-[340px] h-[320px] sm:h-[340px] z-20">
             <!-- Pet 1 hello -->
             <div
-                class="absolute left-[-50px] rotate-[-10deg] top-0 w-[100px] sm:left-[-25px] sm:top-[-105px] sm:w-[150px] md:w-[180px] transition-all">
+                class="absolute left-[-50px] rotate-[-10deg] top-0 w-[100px] sm:left-[-25px] sm:top-[-105px] sm:w-[150px] md:w-[180px] md:top-[-130px] transition-all">
                 <img src="{{ asset('occo/home/Gif_(30).gif') }}" alt="Pet 1" class="object-cover">
             </div>
             <!-- Pet 2 -->
