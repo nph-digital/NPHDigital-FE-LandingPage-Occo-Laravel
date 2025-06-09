@@ -11,7 +11,7 @@
             'top-0 left-1/5 w-12 md:w-8 sm:w-4', //10
             'top-1 left-1/3 w-14 md:w-10 sm:w-5', //11
             'top-0 left-3/5 w-18 md:w-12 sm:w-6', //12
-            'top-1 right-7 w-16 md:w-10 sm:w-5', //13
+            'bottom-0 right-7 w-[40%] md:w-10 sm:w-5', //13
             'top-3 left-2 w-14 md:w-10 sm:w-5', //14
             'top-7 right-2 w-12 md:w-8 sm:w-4', //15
             'top-1/4 left-2 w-16 md:w-10 sm:w-5', //16
@@ -50,8 +50,10 @@
     @endphp
     <div class="absolute inset-0 pointer-events-none select-none">
         @foreach ($icons as $i => $icon)
+        <div class="{{ $iconClasses[$i] ?? 'top-0 left-0 w-10' }}">
             <img src="{{ $icon }}" alt="occo-bg-{{ $i }}"
-                class="absolute object-contain {{ $iconClasses[$i] ?? 'top-0 left-0 w-10' }}" />
+                class="absolute object-contain " />
+        </div>
         @endforeach
     </div>
 
