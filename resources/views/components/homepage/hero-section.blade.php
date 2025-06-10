@@ -1,4 +1,6 @@
 <div class="relative z-10 container mx-auto px-4 pt-8 pb-12 flex flex-col-reverse lg:flex-row items-center min-h-screen">
+    <!-- BG BALLS EFFECT -->
+    @include('components.homepage.includes.ball-hero-section')
     <!-- BG DOTS EFFECT -->
     @include('components.homepage.includes.dot-hero-section')
 
@@ -15,7 +17,7 @@
             Thiên Ý dẫn lối – bạn chỉ cần chạm!
         </p>
         <!-- Download Buttons -->
-        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 z-20">
             <a href="#" class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
                 <img src="{{ asset('occo/home/chplay.png') }}" alt="CH Play" class="mr-2 w-6">
                 <span class="text-xs text-gray-900 font-semibold leading-4">Download on the<br><span
@@ -31,7 +33,8 @@
     </div>
 
     <!-- RIGHT: IMAGE HERO -->
-    <div class="w-full lg:flex-1 flex justify-center items-center relative pt-[20%] mt-[10%] sm:pt-[10%] sm:mt-[5%] md:pt-[5%] md:mt-[2%] lg:pt-0 lg:mt-0">
+    <div
+        class="w-full lg:flex-1 flex justify-center items-center relative pt-[20%] mt-[10%] sm:pt-[10%] sm:mt-[5%] md:pt-[5%] md:mt-[2%] lg:pt-0 lg:mt-0">
 
         <!-- Responsive HERO IMAGE WRAPPER -->
         <div
