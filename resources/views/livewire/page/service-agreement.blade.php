@@ -1,6 +1,6 @@
 <div>
     <x-service-agreement.hero-section />
-    <div class="privacy-service-page-content-autoclass z-20 -mt-42 bg-white">
+    <div class="privacy-service-page-content-autoclass z-20 -mt-42 bg-white mb-8">
         <div class="max-w-[1200px] mx-auto px-4 text-[#7545E6]">
             <span class="text-2xl font-bold text-[#C1B8FA] flex items-center justify-center pt-4">Occo cam kết bảo mật và bảo vệ thông tin cá nhân của bạn.</span>
             <h2>I. Giới thiệu</h2>
