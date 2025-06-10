@@ -93,7 +93,7 @@
         style="display: none;">
         <div class="relative w-full flex flex-col items-start">
             <div class="relative z-10 px-6 py-8">
-                <h2 class="text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight mb-4">
+                <h2 class="text-3xl sm:text-5xl md:text-5xl font-extrabold leading-tight mb-4">
                     <span class="bg-gradient-to-r from-[#EB77C5] to-[#FFD7A9] bg-clip-text text-transparent">Bé Gà Occo
                         siêu</span><br>
                     <span class="bg-gradient-to-r from-[#EB77C5] to-[#FFD7A9] bg-clip-text text-transparent">Dễ Thương
