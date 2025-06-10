@@ -3,10 +3,23 @@
         <div class="flex items-center animate-marquee-cmt gap-x-16 whitespace-nowrap">
             @php
                 $comments = [
-                    ['text' => 'Giao diện đỉnh, âm thanh nét, cộng đồng chất. App này không chỉ dễ nói – mà dễ cảm.', 'user' => '@HOANGTAM'],
-                    ['text' => 'Biến những phút rảnh rỗi của tôi thành những khoảnh khắc vui vẻ có ý nghĩa.', 'user' => '@HOANGTAM'],
-                    ['text' => 'Không gian trò chuyện mà tôi luôn tìm kiếm. Vào một lần là không muốn thoát ra.', 'user' => '@HOANGTAM'],
-                    ['text' => 'Tôi từng nghĩ chỉ để nói chuyện. Giờ tôi thấy nó là nơi kết nối và thể hiện bản thân.', 'user' => '@HOANGTAM'],
+                    [
+                        'text' => 'Giao diện đỉnh, âm thanh nét, cộng đồng chất. App này không chỉ dễ nói – mà dễ cảm.',
+                        'user' => '@HOANGTAM',
+                    ],
+                    [
+                        'text' => 'Biến những phút rảnh rỗi của tôi thành những khoảnh khắc vui vẻ có ý nghĩa.',
+                        'user' => '@HOANGTAM',
+                    ],
+                    [
+                        'text' => 'Không gian trò chuyện mà tôi luôn tìm kiếm. Vào một lần là không muốn thoát ra.',
+                        'user' => '@HOANGTAM',
+                    ],
+                    [
+                        'text' =>
+                            'Tôi từng nghĩ chỉ để nói chuyện. Giờ tôi thấy nó là nơi kết nối và thể hiện bản thân.',
+                        'user' => '@HOANGTAM',
+                    ],
                     ['text' => 'App giúp tôi tự tin chia sẻ và kết nối với mọi người hơn.', 'user' => '@HOANGTAM'],
                     ['text' => 'Cộng đồng vui vẻ, nhiều bạn mới, trải nghiệm tuyệt vời!', 'user' => '@LINHNGO'],
                     ['text' => 'Mỗi ngày đều có chuyện hay để kể, không còn cô đơn.', 'user' => '@MINHTHU'],
@@ -29,22 +42,43 @@
             @endphp
             @foreach ($marqueeCmt as $cmt)
                 <div class="flex flex-col items-center text-center min-w-[340px] max-w-[340px] px-8 py-4 break-words">
-    <div class="text-[#6C3DF4] font-extrabold text-lg md:text-xl lg:text-2xl leading-tight mb-4 break-words whitespace-pre-line">{!! nl2br(e($cmt['text'])) !!}</div>
-    <span class="inline-block border-2 border-[#6C3DF4] text-[#6C3DF4] rounded-lg px-4 py-1 text-xs font-bold tracking-widest uppercase">{{ $cmt['user'] }}</span>
-</div>
+                    <div
+                        class="text-[#6C3DF4] font-extrabold text-lg md:text-xl lg:text-2xl leading-tight mb-4 break-words whitespace-pre-line">
+                        {!! nl2br(e($cmt['text'])) !!}</div>
+                    <span
+                        class="inline-block border-2 border-[#6C3DF4] text-[#6C3DF4] rounded-lg px-4 py-1 text-xs font-bold tracking-widest uppercase">{{ $cmt['user'] }}</span>
+                </div>
             @endforeach
         </div>
     </div>
     <style>
         @keyframes marquee-cmt {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-33.333%); }
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-33.333%);
+            }
         }
+
         .animate-marquee-cmt {
-            animation: marquee-cmt 36s linear infinite;
+            animation: marquee-cmt 25s linear infinite;
         }
-        @media (max-width: 768px) {
-            .animate-marquee-cmt { animation-duration: 60s; }
+
+        /* Tablet */
+        @media (max-width: 1023px) {
+            .animate-marquee-cmt {
+                animation-duration: 15s;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 639px) {
+            .animate-marquee-cmt {
+                animation-duration: 15s;
+            }
         }
     </style>
+
 </section>
