@@ -9,17 +9,17 @@
         ['class' => 'top-[20%] left-[15%] w-[100px] rotate-[30deg]  md:block hidden', 'image' => 'a4.webp'],
         ['class' => 'top-[35%] md:top-[10%] right-2 md:left-[35%] w-[100px]', 'image' => 'a5.webp'],
         ['class' => 'top-12 right-[8%] w-[140px] md:block hidden', 'image' => 'a8.webp'],
-        ['class' => 'top-2 right-3 w-[140px]', 'image' => 'a11.webp'],
+        ['class' => 'top-2 right-3 w-[140px] md:block hidden', 'image' => 'a11.webp'],
         ['class' => 'top-[25%] left-[25%] w-[100px] md:block hidden', 'image' => 'a12.webp'],
         ['class' => 'top-[20%] right-[50%] w-[140px] md:block hidden', 'image' => 'a16.webp'],
         ['class' => 'top-[20%] right-[40%] w-[140px] md:block hidden', 'image' => 'a23.webp'],
-        ['class' => 'top-[20%] md:top-[30%] right-0 w-[100px]', 'image' => 'a25.webp'],
+        ['class' => 'top-[30%] right-0 w-[100px] md:block hidden', 'image' => 'a25.webp'],
         ['class' => 'top-2 right-[20%] w-[140px] md:block hidden', 'image' => 'a33.webp'],
-        ['class' => 'top-[25%] md:top-[20%] right-[15%] md:right-[20%] w-[140px]', 'image' => 'a24.webp'],
-        ['class' => 'top-5 left-[5%] md:right-[40%] w-[160px]', 'image' => 'a37.webp'],
+        ['class' => 'top-[20%] md:right-[20%] w-[140px] md:block hidden', 'image' => 'a24.webp'],
+        ['class' => 'top-5 right-[40%] w-[160px] md:block hidden', 'image' => 'a37.webp'],
         ['class' => 'top-[10%] left-[22%] w-[120px] md:block hidden', 'image' => 'a38.webp'],
         ['class' => 'top-[5%] left-[28%] w-[100px] md:block hidden', 'image' => 'a39.webp'],
-        ['class' => 'top-8 right-[28%] w-[160px]', 'image' => 'g6.gif'],
+        ['class' => 'top-8 right-[28%] w-[160px] md:block hidden', 'image' => 'g6.gif'],
         ['class' => 'top-[45%] right-[45%] w-[150px] xl:block hidden', 'image' => 'g7.gif'],
         ['class' => 'top-[32%] right-[10%] w-[140px] sm:block hidden', 'image' => 'g27.gif'],
         ['class' => 'top-[36%] right-[32%] w-[180px] xl:block hidden', 'image' => 'g22.gif'],
@@ -76,7 +76,7 @@
     </div>
 
     <!-- Text block bên trái -->
-    <div class="relative min-h-screen flex flex-col justify-center z-10 max-w-3xl pl-6 md:pl-24 lg:pl-36 pr-4 md:pr-0"
+    <div class="relative min-h-screen flex flex-col md:justify-center z-10 max-w-3xl pl-6 md:pl-24 lg:pl-36 pr-4 md:pr-0"
         x-show="showText" x-transition:enter="opacity-0 translate-y-8"
         x-transition:enter-start="opacity-0 translate-y-8" x-transition:enter-end="opacity-100 translate-y-0"
         style="display: none;">
