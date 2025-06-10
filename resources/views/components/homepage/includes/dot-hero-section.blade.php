@@ -1,5 +1,4 @@
 <div class="absolute inset-0 z-0 pointer-events-none">
-    <!-- Dot 1 -->
     <style>
         .dot-gradient {
             width: 6px;
@@ -213,27 +212,32 @@
             animation-delay: 1.5s;
         }
     </style>
-    <div class="absolute top-1/4 left-1/4 dot-gradient dot-animate-1"></div>
-    <!-- Dot 2 -->
-    <div class="absolute top-2/3 left-1/3 dot-gradient dot-animate-2"></div>
-    <!-- Dot 3 -->
-    <div class="absolute top-1/2 left-2/3 dot-gradient dot-animate-3"></div>
-    <!-- Dot 4 -->
-    <div class="absolute top-[80%] left-[60%] dot-gradient dot-animate-4"></div>
-    <!-- Dot 5 -->
-    <div class="absolute top-1/3 left-[80%] dot-gradient dot-animate-5"></div>
-    <!-- Dot 6 -->
-    <div class="absolute top-[15%] left-[70%] dot-gradient dot-animate-6"></div>
-    <!-- Dot 7 -->
-    <div class="absolute top-[60%] left-[10%] dot-gradient dot-animate-7"></div>
-    <!-- Dot 8 -->
-    <div class="absolute top-[10%] left-[15%] dot-gradient dot-animate-8"></div>
-    <!-- Dot 9 -->
-    <div class="absolute top-[40%] left-[10%] dot-gradient dot-animate-9"></div>
-    <!-- Dot 10 -->
-    <div class="absolute top-[85%] left-[30%] dot-gradient"></div>
-    <!-- Dot 11 -->
-    <div class="absolute top-[70%] left-[80%] dot-gradient"></div>
-    <!-- Dot 12 -->
-    <div class="absolute top-[55%] left-[55%] dot-gradient"></div>
+    @php $dotCount = 45; @endphp
+    @for ($i = 0; $i < $dotCount; $i++)
+        <div class="absolute dot-gradient" data-dot-index="{{ $i }}"></div>
+    @endfor
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dotCount = 45;
+            const animates = Array.from({
+                length: 12
+            }, (_, i) => `dot-animate-${i+1}`);
+            const extras = ['blur-sm', 'blur-md', 'opacity-70', 'opacity-80', 'drop-shadow-lg', 'drop-shadow-xl',
+                ''];
+            document.querySelectorAll('[data-dot-index]').forEach(dot => {
+                // Random top/left (10-90%)
+                const top = Math.floor(Math.random() * 80) + 10;
+                const left = Math.floor(Math.random() * 80) + 10;
+                dot.style.top = top + '%';
+                dot.style.left = left + '%';
+                // Random animate
+                const animate = animates[Math.floor(Math.random() * animates.length)];
+                dot.classList.add(animate);
+                // Random extra effect
+                const extra = extras[Math.floor(Math.random() * extras.length)];
+                if (extra) dot.classList.add(extra);
+            });
+        });
+    </script>
+
 </div>
