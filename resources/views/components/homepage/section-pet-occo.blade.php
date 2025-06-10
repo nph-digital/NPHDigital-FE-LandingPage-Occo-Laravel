@@ -6,14 +6,6 @@
 
 @endphp
 <section class="relative w-full bg-white min-h-screen overflow-hidden">
-    <!-- Responsive: padding nhỏ hơn trên mobile, giữ nguyên desktop -->
-    <div class="absolute inset-0 pointer-events-none select-none">
-        @foreach ($icons as $i => $icon)
-            <div class="absolute {{ $iconClasses[$i] ?? 'top-0 left-0 w-[10px]' }}">
-                <img src="{{ $icon }}" alt="pet icon" class="w-full h-full object-cover">
-            </div>
-        @endforeach
-    </div>
     <!--
         Icon phủ quanh
     
@@ -71,9 +63,16 @@
     {{-- Render ảnh với class tương ứng, giữ nguyên layout UI --}}
     @foreach ($iconItems as $item)
         <img src="{{ asset('occo/home/ga_pet/' . $item['image']) }}"
-            class="absolute {{ $item['class'] }} w-[32px] xs:w-[40px] sm:w-[60px] md:w-auto max-w-[18vw] md:max-w-none pointer-events-none select-none"
+            class="absolute {{ $item['class'] }}"
             alt="pet icon">
     @endforeach
+    <div class="absolute inset-0 pointer-events-none select-none">
+        @foreach ($icons as $i => $icon)
+            <div class="absolute {{ $iconClasses[$i] ?? 'top-0 left-0 w-[10px]' }}">
+                <img src="{{ $icon }}" alt="occo-bg-{{ $i }}" class="object-contain " />
+            </div>
+        @endforeach
+    </div>
 
     <!-- Text block bên trái -->
     <div class="relative min-h-screen flex flex-col justify-center z-10 max-w-3xl pl-6 md:pl-24 lg:pl-36 pr-4 md:pr-0">
