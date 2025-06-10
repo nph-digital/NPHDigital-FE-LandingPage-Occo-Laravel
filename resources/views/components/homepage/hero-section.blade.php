@@ -31,22 +31,23 @@
     </div>
 
     <!-- RIGHT: IMAGE HERO -->
-    <div class="w-full lg:flex-1 flex justify-center items-center relative">
+    <div class="w-full lg:flex-1 flex justify-center items-center relative pt-[20%] mt-[10%] sm:pt-[10%] sm:mt-[5%] md:pt-[5%] md:mt-[2%] lg:pt-0 lg:mt-0">
+
         <!-- Responsive HERO IMAGE WRAPPER -->
         <div
             class="relative flex justify-center items-center w-full max-w-[340px] aspect-square sm:aspect-auto sm:h-[340px] z-20">
             <!-- Pet 1 hello -->
             <div
-                class="absolute left-[-50px] rotate-[-10deg] top-0 w-[100px] sm:left-[-25px] sm:top-[-105px] sm:w-[150px] md:w-[180px] md:top-[-130px] transition-all">
+                class="absolute left-[2%] rotate-[-10deg] top-[12%] w-[100px] sm:left-[-25px] sm:top-[-105px] sm:w-[150px] md:w-[180px] md:top-[-130px] transition-all">
                 <img src="{{ asset('occo/home/Gif_(30).gif') }}" alt="Pet 1" class="object-cover">
             </div>
             <!-- Pet 2 -->
             <div
-                class="absolute right-[-50px] rotate-[40deg] top-6 w-[100px] sm:left-[80%] sm:top-[-65px] sm:w-[150px] md:w-[180px] transition-all">
+                class="absolute right-[5%] rotate-[40deg] top-[12%] w-[100px] sm:left-[80%] sm:top-[-65px] sm:w-[150px] md:w-[180px] transition-all">
                 <img src="{{ asset('occo/home/Gif_(3).gif') }}" alt="Pet 2" class="object-cover">
             </div>
             <!-- Card 1 trái -->
-            <div class="absolute left-[-80px] top-24 w-[120px] sm:left-[-50px] sm:top-8 sm:w-auto transition-all">
+            <div class="absolute left-[-10%] top-[40%] w-[120px] sm:left-[-50px] sm:top-8 sm:w-auto transition-all">
                 <img src="{{ asset('occo/home/t1.png') }}" alt="Profile 1" class="object-cover">
             </div>
             <!-- Card 2 (center, lớn nhất) -->
@@ -62,7 +63,7 @@
             </div>
             <!-- Card 3 -->
             <div
-                class="absolute right-[-90px] top-24 w-[200px] sm:right-[-100px] sm:top-12 sm:w-auto z-20 transition-all">
+                class="absolute right-[-9%] top-[30%] w-[200px] sm:right-[-100px] sm:top-12 sm:w-auto z-20 transition-all">
                 <img src="{{ asset('occo/home/t3.png') }}" alt="Profile 3"
                     class="object-cover sm:w-[230px] md:w-[250px]">
             </div>
