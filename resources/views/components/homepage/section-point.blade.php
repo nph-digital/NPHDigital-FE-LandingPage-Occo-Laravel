@@ -19,7 +19,16 @@
                 <img src="{{ asset('occo/home/grade.png') }}"
                     class="absolute top-24 right-0 w-5 h-5 opacity-60 animate-bounce" style="animation-delay:0.8s"
                     alt="star" />
-                <div class="pl-5">
+                <img src="{{ asset('occo/home/grade.png') }}"
+                    class="absolute top-10 right-10 w-8 h-8 opacity-70 animate-ping" style="animation-delay:0.4s"
+                    alt="star" />
+                <img src="{{ asset('occo/home/grade.png') }}"
+                    class="absolute bottom-0 right-5 w-10 h-10 opacity-60 animate-spin-slow" alt="star" />
+                <img src="{{ asset('occo/home/grade.png') }}"
+                    class="absolute top-1/2 left-0 w-7 h-7 opacity-80 animate-bounce" style="animation-delay:1s"
+                    alt="star" />
+
+                <div class="pl-5 pt-[15%] sm:pt-[10%] md:pt-0">
                     <h2
                         class="text-[2.2rem] md:text-4xl font-extrabold leading-tight text-[#2196F3] mb-6 relative z-10">
                         Điểm Tín Nhiệm – Xây Dựng Niềm Tin, Mở Rộng Cơ Hội
@@ -34,11 +43,12 @@
             </div>
             <!-- Right: Phone mockup image -->
             <div class="flex-1 flex justify-end items-center relative z-10 h-full">
-                <div class="w-full flex items-center justify-end">
+                <div class="w-full flex items-center justify-end translate-x-6 sm:translate-x-4 md:translate-x-6">
                     <img src="{{ asset('occo/home/Product-point.png') }}" alt="Điểm tín nhiệm OCCO"
                         class="h-full w-auto object-contain" />
                 </div>
             </div>
+
         </div>
     </div>
     <style>
