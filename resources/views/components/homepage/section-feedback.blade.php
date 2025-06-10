@@ -1,6 +1,11 @@
 <section class="relative w-full py-16 bg-gradient-to-br from-[#B18CFF] to-[#A6D0FF] overflow-hidden">
     <div class="container mx-auto px-2 relative z-10">
         <div class="relative flex items-center justify-center">
+            <!-- Image balls -->
+            <img src="{{ asset('occo/ball/Ball2@4x.webp') }}" alt="Ball 1" aria-hidden="true"
+                class="absolute left-5 top-[5%] w-[380px] opacity-60 z-0 select-none pointer-events-none blur-lg" />
+            <img src="{{ asset('occo/ball/Ball@4x.webp') }}" alt="Ball 2" aria-hidden="true"
+                class="absolute right-[-5%] bottom-[3%] w-[380px] opacity-60 z-0 select-none pointer-events-none blur-lg" />
             <!-- Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full max-w-7xl">
                 @php
@@ -49,7 +54,8 @@
                                         {{ $fb['name'] }}
                                         <span
                                             class="inline-flex items-center align-middle text-xs font-semibold px-2 py-0.5 rounded-full bg-[#E8F8F3] text-[#30BB3E]">
-                                            <span><img src="{{ asset('occo/home/flowerlotus.svg') }}" alt="grade" class="w-4 h-4" /></span>
+                                            <span><img src="{{ asset('occo/home/flowerlotus.svg') }}" alt="grade"
+                                                    class="w-4 h-4" /></span>
                                             {{ $fb['badge'] }}
                                         </span>
                                     </div>
