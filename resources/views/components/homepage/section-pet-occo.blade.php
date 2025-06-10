@@ -1,6 +1,6 @@
 @php
     $iconDir = public_path('occo/home/ga_pet');
-    $icons = collect(array_merge(glob($iconDir . '/*.gif'), glob($iconDir . '/*.webp'), glob($iconDir . '/*.webp')))->map(
+    $icons = collect(array_merge(glob($iconDir . '/*.gif'), glob($iconDir . '/*.webp')))->map(
         fn($path) => asset('occo/home/ga_pet/' . basename($path)),
     );
 
@@ -9,7 +9,9 @@
     <!-- Responsive: padding nhỏ hơn trên mobile, giữ nguyên desktop -->
     <div class="absolute inset-0 pointer-events-none select-none">
         @foreach ($icons as $i => $icon)
-            <div class="absolute {{ $iconClasses[$i] ?? 'top-0 left-0 w-[10px]' }}"></div>
+            <div class="absolute {{ $iconClasses[$i] ?? 'top-0 left-0 w-[10px]' }}">
+                <img src="{{ $icon }}" alt="pet icon" class="w-full h-full object-cover">
+            </div>
         @endforeach
     </div>
     <!--
