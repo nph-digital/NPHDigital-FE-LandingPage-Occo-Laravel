@@ -10,14 +10,15 @@
         <!-- Avatar Left -->
         <div class="flex-1 flex justify-center items-center">
             <div class="relative">
-                <img src="{{ asset('occo/home/Image-wrap1.png') }}" alt="Avatar Left" class="w-[350px] translate-y-8" />
+                <img src="{{ asset('occo/home/Image-wrap1.png') }}" alt="Avatar Left"
+                    class="w-[350px] sm:w-[300px]" />
                 <span class="absolute top-0 right-0">
                     <img src="{{ asset('occo/home/Badge.png') }}" alt="Heart" class="w-16" />
                 </span>
             </div>
         </div>
         <!-- Center Text -->
-        <div class="flex-[2] flex flex-col items-center justify-center text-center px-2">
+        <div class="flex-[2] flex flex-col items-center justify-center text-center px-2 sm:pb-[7%]">
             <h1 class="text-white text-4xl md:text-5xl font-extrabold mb-4 leading-tight drop-shadow">Kết nối Thiên
                 Ý<br>Kết bạn chỉ 1 chạm</h1>
             <p class="text-[#7B5CB0] text-base md:text-lg mb-7 max-w-xl">
@@ -37,7 +38,7 @@
         <div class="flex-1 flex justify-center items-center">
             <div class="relative">
                 <img src="{{ asset('occo/home/Image-wrap2.png') }}" alt="Avatar Right"
-                    class="w-[350px] -translate-y-8" />
+                    class="w-[350px] -translate-y-8 sm:w-[300px]" />
                 <img src="{{ asset('occo/home/yeuthich.png') }}" alt="Yêu thích"
                     class="absolute -top-20 left-30 rotate-[25deg] -translate-x-1/2 w-60 select-none pointer-events-none" />
                 <!-- Chat icon dưới khung ảnh -->
