@@ -5,16 +5,17 @@
     <div
         class="absolute right-[-80px] bottom-[-40px] w-[280px] h-[280px] bg-[#B18EF2] opacity-50 rounded-full blur-[120px] z-0">
     </div>
+    <!-- Image balls -->
+    <img src="{{ asset('occo/ball/Ball2@4x.webp') }}" alt="Ball 1" aria-hidden="true"
+        class="absolute left-5 top-[5%] w-[380px] opacity-60 z-0 select-none pointer-events-none blur-lg" />
+    <img src="{{ asset('occo/ball/Ball@4x.webp') }}" alt="Ball 2" aria-hidden="true"
+        class="absolute right-[-5%] bottom-[3%] w-[380px] opacity-60 z-0 select-none pointer-events-none blur-lg" />
 
     <div class="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-0">
         <!-- Avatar Left -->
-        <div class="flex-1 flex justify-center items-center">
+        <div class="flex-1 flex justify-end">
             <div class="relative">
-                <img src="{{ asset('occo/home/Image-wrap1.png') }}" alt="Avatar Left"
-                    class="w-[350px] sm:w-[300px]" />
-                <span class="absolute top-0 right-0">
-                    <img src="{{ asset('occo/home/Badge.png') }}" alt="Heart" class="w-16" />
-                </span>
+                <img src="{{ asset('occo/home/item2.webp') }}" alt="Avatar Left" class="w-[350px] sm:w-[220px]" />
             </div>
         </div>
         <!-- Center Text -->
@@ -35,15 +36,10 @@
             </div>
         </div>
         <!-- Avatar Right -->
-        <div class="flex-1 flex justify-center items-center">
+        <div class="flex-1 flex justify-start ">
             <div class="relative">
-                <img src="{{ asset('occo/home/Image-wrap2.png') }}" alt="Avatar Right"
-                    class="w-[350px] -translate-y-8 sm:w-[300px]" />
-                <img src="{{ asset('occo/home/yeuthich.png') }}" alt="Yêu thích"
-                    class="absolute -top-20 left-30 rotate-[25deg] -translate-x-1/2 w-60 select-none pointer-events-none" />
-                <!-- Chat icon dưới khung ảnh -->
-                <img src="{{ asset('occo/home/Badge-2.png') }}" alt="Yêu thích"
-                    class="absolute bottom-8 left-1/2 -translate-x-1/2 w-20 select-none pointer-events-none" />
+                <img src="{{ asset('occo/home/item.webp') }}" alt="Avatar Right"
+                    class="w-[350px] sm:w-[250px]" />
             </div>
         </div>
     </div>
