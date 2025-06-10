@@ -27,6 +27,27 @@
     }
 
     .animate-marquee {
-        animation: marquee 30s linear infinite;
+        animation: marquee 25s linear infinite;
+    }
+
+    /* Mobile - chậm hơn */
+    @media (max-width: 639px) {
+        .animate-marquee {
+            animation-duration: 25s;
+        }
+    }
+
+    /* Tablet - vừa vừa */
+    @media (min-width: 640px) and (max-width: 1023px) {
+        .animate-marquee {
+            animation-duration: 25s;
+        }
+    }
+
+    /* Desktop - nhanh hơn */
+    @media (min-width: 1024px) {
+        .animate-marquee {
+            animation-duration: 20s;
+        }
     }
 </style>
