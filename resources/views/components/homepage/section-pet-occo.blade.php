@@ -8,7 +8,7 @@
 @php
     // Mapping thủ công class và tên ảnh, chuẩn Laravel, dễ maintain
     $iconItems = [
-        ['class' => 'top-[40%] left-0 w-[110px]', 'image' => 'a1.webp'],
+        ['class' => 'top-[40%] left-0 w-[110px] lg:block hidden', 'image' => 'a1.webp'],
         ['class' => 'top-[20%] left-[15%] w-[100px] rotate-[30deg]', 'image' => 'a4.webp'],
         ['class' => 'top-[10%] left-[35%] w-[100px]', 'image' => 'a5.webp'],
         ['class' => 'top-12 right-[8%] w-[140px]', 'image' => 'a8.webp'],
@@ -23,17 +23,17 @@
         ['class' => 'top-[10%] left-[22%] w-[120px]', 'image' => 'a38.webp'],
         ['class' => 'top-[5%] left-[28%] w-[100px]', 'image' => 'a39.webp'],
         ['class' => 'top-8 right-[28%] w-[160px]', 'image' => 'g6.gif'],
-        ['class' => 'top-[45%] right-[45%] w-[150px]', 'image' => 'g7.gif'],
-        ['class' => 'top-[32%] right-[10%] w-[140px]', 'image' => 'g27.gif'],
-        ['class' => 'top-[36%] right-[32%] w-[180px]', 'image' => 'g22.gif'],
+        ['class' => 'top-[45%] right-[45%] w-[150px] xl:block hidden', 'image' => 'g7.gif'],
+        ['class' => 'top-[32%] right-[10%] w-[140px] sm:block hidden', 'image' => 'g27.gif'],
+        ['class' => 'top-[36%] right-[32%] w-[180px] xl:block hidden', 'image' => 'g22.gif'],
         ['class' => 'top-[20%] left-[5%] w-[120px]', 'image' => 'g33.gif'],
         ['class' => 'bottom-75 right-[35%] w-[125px] rotate-[-20deg]', 'image' => 'a20.webp'],
         ['class' => 'bottom-[-15px] right-160 w-[6%]', 'image' => 'a30.webp'],
         ['class' => 'bottom-[-25px] left-[35%] w-[7%]', 'image' => 'g20.gif'],
-        ['class' => 'bottom-[45%] right-[20%] w-[150px] rotate-[40deg]', 'image' => 'a9.webp'],
+        ['class' => 'bottom-[45%] right-[20%] w-[150px] rotate-[40deg] lg:block hidden', 'image' => 'a9.webp'],
         ['class' => 'bottom-75 right-0 w-[100px]', 'image' => 'a7.webp'],
         ['class' => 'bottom-72 right-[28%] w-[95px]', 'image' => 'a2.webp'],
-        ['class' => 'bottom-[42%] right-[12%] w-[60px] rotate-[20deg]', 'image' => 'a3.webp'],
+        ['class' => 'bottom-[42%] right-[12%] w-[60px] rotate-[20deg] md:block hidden', 'image' => 'a3.webp'],
         ['class' => 'bottom-[-15px] right-[50%] w-[6%]', 'image' => 'a32.webp'],
         ['class' => 'bottom-40 left-[28%] w-[110px]', 'image' => 'a27.webp'],
         ['class' => 'bottom-2 right-1/2 w-[10px]', 'image' => 'a28.webp'],
@@ -48,7 +48,7 @@
         ['class' => 'bottom-38 left-[20%] w-[95px]', 'image' => 'g21.gif'],
         ['class' => 'bottom-8 left-2/3 w-[10px]', 'image' => 'g22.gif'],
         ['class' => 'bottom-36 left-[-10px] w-[130px]', 'image' => 'g28.gif'],
-        ['class' => 'bottom-96 right-5 w-[180px]', 'image' => 'g39.gif'],
+        ['class' => 'bottom-96 right-5 w-[180px] lg:block hidden', 'image' => 'g39.gif'],
     ];
 @endphp
 <section class="relative w-full bg-white min-h-screen overflow-hidden" x-data="{
@@ -104,9 +104,9 @@
                     vẻ, buồn bã, tò mò đến hài hước – Occo đều thể hiện thật hoàn hảo!
                 </p>
             </div>
-            <div
+            {{-- <div
                 class="absolute left-0 right-0 mx-auto bottom-0 w-[420px] h-[220px] bg-[#ffdf22]/90 rounded-full blur-[150px] z-0">
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
