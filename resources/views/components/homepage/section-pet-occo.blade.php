@@ -3,9 +3,6 @@
     $icons = collect(array_merge(glob($iconDir . '/*.gif'), glob($iconDir . '/*.webp')))->map(
         fn($path) => asset('occo/home/ga_pet/' . basename($path)),
     );
-
-@endphp
-@php
     // Mapping thủ công class và tên ảnh, chuẩn Laravel, dễ maintain
     $iconItems = [
         ['class' => 'top-[40%] left-0 w-[110px] lg:block hidden', 'image' => 'a1.webp'],
@@ -56,21 +53,13 @@
     showIcons: Array({{ count($iconItems ?? []) }}).fill(false),
     async init() {
         this.showText = true;
-        // Đợi chữ hiện xong (400ms), rồi lần lượt hiện từng icon
         await new Promise(r => setTimeout(r, 400));
         for (let i = 0; i < this.showIcons.length; i++) {
             this.showIcons[i] = true;
-            await new Promise(r => setTimeout(r, 120)); // delay từng icon
+            await new Promise(r => setTimeout(r, 120));
         }
     }
 }" x-init="init()">
-    <!--
-        Icon phủ quanh
-    
-        TODO:
-        - ảnh được lưu trong public/occo/home/ga_pet
-        - thứ tự ảnh trong folder tương ứng với class code bên dưới
-    -->
     @foreach ($iconItems as $i => $item)
         <img src="{{ asset('occo/home/ga_pet/' . $item['image']) }}"
             class="absolute {{ $item['class'] }} transition-all duration-500 ease-out" alt="pet icon"
@@ -104,9 +93,6 @@
                     vẻ, buồn bã, tò mò đến hài hước – Occo đều thể hiện thật hoàn hảo!
                 </p>
             </div>
-            {{-- <div
-                class="absolute left-0 right-0 mx-auto bottom-0 w-[420px] h-[220px] bg-[#ffdf22]/90 rounded-full blur-[150px] z-0">
-            </div> --}}
         </div>
     </div>
 </section>
