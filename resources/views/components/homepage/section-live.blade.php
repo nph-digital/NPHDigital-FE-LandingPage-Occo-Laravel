@@ -32,17 +32,8 @@
         <!-- RIGHT: PHONE MOCKUP + AVATAR + ICONS -->
         <div class="flex-1 flex justify-center items-center relative mt-12 lg:mt-0 min-w-[350px]">
             <!-- Phone Mockup -->
-            <img src="{{ asset('occo/home/Group_18583.png') }}" alt="Live Phone"
+            <img src="{{ asset('occo/home/RoomLive.webp') }}" alt="Live Phone"
                 class="relative z-10 w-[320px] md:w-[370px] drop-shadow-2xl" />
-            <!-- Heart Icon top -->
-            <img src="{{ asset('occo/home/Badge.png') }}" alt="Heart"
-                class="absolute top-[60px] right-[280px] w-12 z-20" />
-            <!-- Heart Icon bottom -->
-            <img src="{{ asset('occo/home/Badge.png') }}" alt="Heart"
-                class="absolute bottom-[140px] right-[580px] w-20 z-20" />
-            <!-- Chat Icon -->
-            <img src="{{ asset('occo/home/Badge-2.png') }}" alt="Chat"
-                class="absolute right-[260px] bottom-[100px] w-15 z-20" />
         </div>
     </div>
 </section>
