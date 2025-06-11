@@ -65,12 +65,12 @@
             class="absolute {{ $item['class'] }} transition-all duration-500 ease-out" alt="pet icon"
             x-show="showIcons[{{ $i }}]" x-transition:enter="opacity-0 scale-90 translate-y-4"
             x-transition:enter-start="opacity-0 scale-90 translate-y-4"
-            x-transition:enter-end="opacity-100 scale-100 translate-y-0" style="display: none;">
+            x-transition:enter-end="opacity-100 scale-100 translate-y-0" style="display: none; " loading="lazy">
     @endforeach
     <div class="absolute inset-0 pointer-events-none select-none">
         @foreach ($icons as $i => $icon)
             <div class="absolute {{ $iconClasses[$i] ?? 'top-0 left-0 w-[10px]' }}">
-                <img src="{{ $icon }}" alt="occo-bg-{{ $i }}" class="object-contain " />
+                <img src="{{ $icon }}" alt="occo-bg-{{ $i }}" class="object-contain " loading="lazy" />
             </div>
         @endforeach
     </div>
