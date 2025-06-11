@@ -5,7 +5,7 @@
     @include('components.homepage.includes.dot-hero-section')
 
     <!-- LEFT: TEXT -->
-    <div class="w-full lg:flex-[2.5] flex flex-col justify-center items-start max-w-3xl mt-10 lg:mt-0">
+    <div id="hero-col-left" class="w-full lg:flex-[2.5] flex flex-col justify-center items-start max-w-3xl mt-10 lg:mt-0">
         <h1
             class="text-[2.5rem] md:text-[3rem] lg:text-[4rem] font-extrabold leading-tight text-white mb-4 tracking-widest">
             Kết nối Thiên Ý<br>
@@ -34,6 +34,7 @@
 
     <!-- RIGHT: IMAGE HERO -->
     <div
+        id="hero-col-right"
         class="w-full lg:flex-1 flex justify-center items-center relative pt-[20%] mt-[10%] sm:pt-[10%] sm:mt-[5%] md:pt-[5%] md:mt-[2%] lg:pt-0 lg:mt-0">
 
         <!-- Responsive HERO IMAGE WRAPPER -->
@@ -74,7 +75,7 @@
     </div>
 
     <!-- BOTTOM GIF -->
-    <div class="absolute right-5 lg:right-[250px] z-10 bottom-[-60px] lg:bottom-[-100px]">
+    <div id="hero-bottom-gif" class="absolute right-5 lg:right-[250px] z-10 bottom-[-60px] lg:bottom-[-100px]">
         <img src="{{ asset('occo/home/Gif_(18).gif') }}" alt="Decoration" class="object-cover w-[220px] lg:w-[350px]">
     </div>
 </div>
