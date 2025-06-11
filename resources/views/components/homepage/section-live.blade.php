@@ -1,11 +1,11 @@
 <section class="relative w-full py-20 bg-[#ffffff] overflow-hidden">
     <!-- Music Note BG (decor) -->
-    <img src="{{ asset('occo/home/Mask_group.png') }}" alt="Music BG"
+    <img id="live-bg" src="{{ asset('occo/home/Mask_group.png') }}" alt="Music BG"
         class="absolute right-0 top-[-21vh] pointer-events-none select-none z-0" />
 
     <div class="relative z-10 container mx-auto px-6 flex flex-col lg:flex-row items-center">
         <!-- LEFT: TEXT -->
-        <div class="flex-1 flex flex-col items-start justify-center max-w-xl relative">
+        <div id="live-col-left" class="flex-1 flex flex-col items-start justify-center max-w-xl relative">
             <!-- Blur BG block -->
             <div
                 class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[420px] h-[220px] bg-[#ffdf22]/90 rounded-full blur-[150px] z-0">
@@ -24,13 +24,13 @@
                     nay và để thế giới lắng nghe bạn!
                 </p>
                 <!-- Heart Icon in text -->
-                <img src="{{ asset('occo/home/like_notification.png') }}" alt="Heart"
+                <img id="live-heart" src="{{ asset('occo/home/like_notification.png') }}" alt="Heart"
                     class="absolute right-[-50px] bottom-30 w-15 z-20" />
             </div>
         </div>
 
         <!-- RIGHT: PHONE MOCKUP + AVATAR + ICONS -->
-        <div class="flex-1 flex justify-center items-center relative mt-12 lg:mt-0 min-w-[350px]">
+        <div id="live-col-right" class="flex-1 flex justify-center items-center relative mt-12 lg:mt-0 min-w-[350px]">
             <!-- Phone Mockup -->
             <img src="{{ asset('occo/home/RoomLive.webp') }}" alt="Live Phone"
                 class="relative z-10 w-[320px] md:w-[370px] drop-shadow-2xl" />
