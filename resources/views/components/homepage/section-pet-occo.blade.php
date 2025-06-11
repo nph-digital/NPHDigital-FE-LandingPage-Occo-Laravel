@@ -77,17 +77,16 @@
     </div>
 
     {{-- TEXT BLOCK GIỮA --}}
-    <div class="relative z-10 max-w-3xl px-6 text-center" x-show="showText" x-transition:enter="opacity-0 translate-y-8"
-        x-transition:enter-start="opacity-0 translate-y-8" x-transition:enter-end="opacity-100 translate-y-0"
-        style="display: none;">
+    <div id="pet-occo-text-block" class="relative z-10 max-w-3xl px-6 text-center" x-show="showText" x-transition:enter="opacity-0 translate-y-8"
+        x-transition:enter-start="opacity-0 translate-y-8" x-transition:enter-end="opacity-100 translate-y-0">
 
         <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-4">
-            <span class="bg-gradient-to-r from-[#EB77C5] to-[#FFD7A9] bg-clip-text text-transparent">Bé Gà Occo
+            <span id="pet-occo-heading-1" class="bg-gradient-to-r from-[#EB77C5] to-[#FFD7A9] bg-clip-text text-transparent text-[#EB77C5]">Bé Gà Occo
                 siêu</span><br>
-            <span class="bg-gradient-to-r from-[#EB77C5] to-[#FFD7A9] bg-clip-text text-transparent">Dễ Thương
+            <span id="pet-occo-heading-2" class="bg-gradient-to-r from-[#EB77C5] to-[#FFD7A9] bg-clip-text text-transparent text-[#EB77C5]">Dễ Thương
                 đã xuất hiện!</span>
         </h2>
-        <p class="text-gray-700 text-base mt-2">
+        <p id="pet-occo-desc" class="text-gray-700 text-base mt-2">
             Biểu cảm siêu đáng yêu: Occo là chú gà nhỏ với cả thế giới cảm xúc trong chiếc mỏ xinh xắn.
             Từ vui vẻ, buồn bã, tò mò đến hài hước – Occo đều thể hiện thật hoàn hảo!
         </p>
