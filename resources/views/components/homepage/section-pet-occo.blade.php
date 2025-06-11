@@ -31,18 +31,13 @@
     }" x-init="init()">
 
     {{-- SLIDE ICON TRÊN --}}
-    <div class="w-full overflow-x-auto mb-6">
-        <div class="flex gap-4 justify-center min-w-fit">
+    <div class="w-full overflow-none mb-6">
+        <div class="flex gap-8">
             @foreach ($iconItemsTop as $i => $item)
                 <img src="{{ asset('occo/home/ga_pet/' . $item) }}" 
                     alt="icon" 
-                    class="w-[100px] transition-all duration-500 ease-out shrink-0"
-                    x-show="showIcons[{{ $i }}]" 
-                    x-transition:enter="opacity-0 scale-90 translate-y-4"
-                    x-transition:enter-start="opacity-0 scale-90 translate-y-4"
-                    x-transition:enter-end="opacity-100 scale-100 translate-y-0"
-                    style="display: none;" 
-                    loading="lazy">
+                    class="w-[100px] h-auto object-contain"
+                    x-show="showIcons[{{ $i }}]">
             @endforeach
         </div>
     </div>
@@ -68,19 +63,14 @@
     </div>
 
     {{-- SLIDE ICON DƯỚI --}}
-    <div class="w-full overflow-x-auto mt-6">
-        <div class="flex gap-4 justify-center min-w-fit">
+    <div class="w-full overflow-none mt-6">
+        <div class="flex gap-8">
             @foreach ($iconItemsBottom as $i => $item)
                 @php $index = $i + count($iconItemsTop); @endphp
                 <img src="{{ asset('occo/home/ga_pet/' . $item) }}" 
                     alt="icon" 
-                    class="w-[100px] transition-all duration-500 ease-out shrink-0"
-                    x-show="showIcons[{{ $index }}]" 
-                    x-transition:enter="opacity-0 scale-90 translate-y-4"
-                    x-transition:enter-start="opacity-0 scale-90 translate-y-4"
-                    x-transition:enter-end="opacity-100 scale-100 translate-y-0"
-                    style="display: none;" 
-                    loading="lazy">
+                    class="w-[100px] h-auto object-contain"
+                    x-show="showIcons[{{ $index }}]">
             @endforeach
         </div>
     </div>
