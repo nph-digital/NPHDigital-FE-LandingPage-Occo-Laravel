@@ -70,7 +70,7 @@
     <div class="w-full overflow-none mb-6">
         <div class="flex gap-8">
             @foreach ($iconItemsTop as $i => $item)
-                <img src="{{ asset('occo/home/ga_pet/' . $item) }}" alt="icon" class="w-[100px] h-auto object-contain"
+                <img src="{{ asset('occo/home/ga_pet/' . $item) }}" alt="icon" class="occo-icon-top w-[100px] h-auto object-contain"
                     x-show="showIcons[{{ $i }}]">
             @endforeach
         </div>
@@ -98,7 +98,7 @@
             @foreach ($iconItemsBottom as $i => $item)
                 @php $index = $i + count($iconItemsTop); @endphp
                 <img src="{{ asset('occo/home/ga_pet/' . $item) }}" alt="icon"
-                    class="w-[100px] h-auto object-contain" x-show="showIcons[{{ $index }}]">
+                    class="occo-icon-bot w-[100px] h-auto object-contain" x-show="showIcons[{{ $index }}]">
             @endforeach
         </div>
     </div>

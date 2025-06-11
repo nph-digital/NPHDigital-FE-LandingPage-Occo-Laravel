@@ -30,4 +30,36 @@ document.addEventListener("DOMContentLoaded", function () {
             delay: 1.1,
         });
     }
+
+    // Animate icon slide trên/dưới (stagger reveal theo nhóm)
+    const iconTopList = document.querySelectorAll('.occo-icon-top');
+    const iconBotList = document.querySelectorAll('.occo-icon-bot');
+    if (iconTopList.length > 0) {
+        gsap.from(iconTopList, {
+            opacity: 0,
+            y: 32,
+            stagger: {
+                each: 0.035,
+                amount: 0.35,
+                grid: [1, 6]
+            },
+            duration: 0.55,
+            ease: "power2.out",
+            delay: 0.15,
+        });
+    }
+    if (iconBotList.length > 0) {
+        gsap.from(iconBotList, {
+            opacity: 0,
+            y: 32,
+            stagger: {
+                each: 0.035,
+                amount: 0.35,
+                grid: [1, 6]
+            },
+            duration: 0.55,
+            ease: "power2.out",
+            delay: 0.45,
+        });
+    }
 });
