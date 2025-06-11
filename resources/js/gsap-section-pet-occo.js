@@ -4,11 +4,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     if (typeof gsap === "undefined" || typeof SplitText === "undefined") return;
 
-    // Animate h2 (heading1 + heading2) fade in nguyên khối
+    // GSAP timeline để đảm bảo thứ tự: text xong mới tới icon
+    const tl = gsap.timeline();
+
+    // Animate heading
     const heading1 = document.getElementById("pet-occo-heading-1");
     const heading2 = document.getElementById("pet-occo-heading-2");
     if (heading1 && heading2) {
-        gsap.from([heading1, heading2], {
+        tl.from([heading1, heading2], {
             opacity: 0,
             y: 32,
             duration: 0.95,
@@ -21,21 +24,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const desc = document.getElementById("pet-occo-desc");
     if (desc) {
         const splitDesc = new SplitText(desc, { type: "words" });
-        gsap.from(splitDesc.words, {
+        tl.from(splitDesc.words, {
             opacity: 0,
             y: 20,
             stagger: 0.06,
             duration: 0.5,
             ease: "power2.out",
-            delay: 1.1,
-        });
+        }, ">-0.2"); // overlap nhẹ với heading
     }
 
-    // Animate icon slide trên/dưới (stagger reveal theo nhóm)
+    // Animate icon slide trên/dưới (sau khi text xong)
     const iconTopList = document.querySelectorAll('.occo-icon-top');
     const iconBotList = document.querySelectorAll('.occo-icon-bot');
     if (iconTopList.length > 0) {
-        gsap.from(iconTopList, {
+        tl.from(iconTopList, {
             opacity: 0,
             y: 32,
             stagger: {
@@ -45,11 +47,10 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             duration: 0.55,
             ease: "power2.out",
-            delay: 0.15,
-        });
+        }, "+=0.2"); // bắt đầu sau khi text xong
     }
     if (iconBotList.length > 0) {
-        gsap.from(iconBotList, {
+        tl.from(iconBotList, {
             opacity: 0,
             y: 32,
             stagger: {
@@ -59,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             duration: 0.55,
             ease: "power2.out",
-            delay: 0.45,
-        });
+        }, ">-0.15"); // bắt đầu ngay sau icon top, overlap nhẹ
     }
 });
