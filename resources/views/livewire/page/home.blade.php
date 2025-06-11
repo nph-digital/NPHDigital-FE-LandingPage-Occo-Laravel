@@ -18,6 +18,8 @@
     <x-homepage.section-connect />
     <x-homepage.section-cmt />
     <x-homepage.section-point />
-    <x-homepage.section-pet-occo />
+    <div class="hidden xl:block">
+        <x-homepage.section-pet-occo-mxl />
+    </div>
     <x-homepage.section-feedback />
 </div>
