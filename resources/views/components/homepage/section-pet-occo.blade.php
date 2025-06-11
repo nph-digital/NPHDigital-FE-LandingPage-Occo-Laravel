@@ -53,11 +53,16 @@
     showIcons: Array({{ count($iconItems ?? []) }}).fill(false),
     async init() {
         this.showText = true;
-        await new Promise(r => setTimeout(r, 400));
-        for (let i = 0; i < this.showIcons.length; i++) {
-            this.showIcons[i] = true;
-            await new Promise(r => setTimeout(r, 120));
-        }
+        let i = 0;
+        const interval = 120; // Thời gian giữa các ảnh
+        const showNextIcon = () => {
+            if (i < this.showIcons.length) {
+                this.showIcons[i] = true;
+                i++;
+                setTimeout(showNextIcon, interval);
+            }
+        };
+        setTimeout(showNextIcon, 400); // Delay ban đầu
     }
 }" x-init="init()">
     @foreach ($iconItems as $i => $item)
@@ -70,7 +75,8 @@
     <div class="absolute inset-0 pointer-events-none select-none">
         @foreach ($icons as $i => $icon)
             <div class="absolute {{ $iconClasses[$i] ?? 'top-0 left-0 w-[10px]' }}">
-                <img src="{{ $icon }}" alt="occo-bg-{{ $i }}" class="object-contain " loading="lazy" />
+                <img src="{{ $icon }}" alt="occo-bg-{{ $i }}" class="object-contain "
+                    loading="lazy" />
             </div>
         @endforeach
     </div>
