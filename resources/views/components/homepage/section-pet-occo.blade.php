@@ -50,19 +50,8 @@
 <section class="w-full bg-white min-h-screen overflow-hidden flex flex-col items-center justify-center px-4"
     x-data="{
         showText: false,
-        showIcons: Array({{ count($iconItems) }}).fill(false),
         async init() {
             this.showText = true;
-            let i = 0;
-            const interval = 100;
-            const showNextIcon = () => {
-                if (i < this.showIcons.length) {
-                    this.showIcons[i] = true;
-                    i++;
-                    setTimeout(showNextIcon, interval);
-                }
-            };
-            setTimeout(showNextIcon, 400);
         }
     }" x-init="init()">
 
@@ -71,7 +60,7 @@
         <div class="flex gap-8">
             @foreach ($iconItemsTop as $i => $item)
                 <img src="{{ asset('occo/home/ga_pet/' . $item) }}" alt="icon" class="occo-icon-top w-[100px] h-auto object-contain"
-                    x-show="showIcons[{{ $i }}]">
+                    x-show="showText">
             @endforeach
         </div>
     </div>
@@ -96,9 +85,8 @@
     <div class="w-full overflow-none mt-6">
         <div class="flex gap-8">
             @foreach ($iconItemsBottom as $i => $item)
-                @php $index = $i + count($iconItemsTop); @endphp
                 <img src="{{ asset('occo/home/ga_pet/' . $item) }}" alt="icon"
-                    class="occo-icon-bot w-[100px] h-auto object-contain" x-show="showIcons[{{ $index }}]">
+                    class="occo-icon-bot w-[100px] h-auto object-contain" x-show="showText">
             @endforeach
         </div>
     </div>
