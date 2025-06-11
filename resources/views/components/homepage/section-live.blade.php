@@ -32,7 +32,7 @@
         <!-- RIGHT: PHONE MOCKUP + AVATAR + ICONS -->
         <div id="live-col-right" class="flex-1 flex justify-center items-center relative mt-12 lg:mt-0 min-w-[350px]">
             <!-- Phone Mockup -->
-            <img src="{{ asset('occo/home/RoomLive.webp') }}" alt="Live Phone"
+            <img id="live-phone-img" src="{{ asset('occo/home/RoomLive.webp') }}" alt="Live Phone"
                 class="relative z-10 w-[320px] md:w-[370px] drop-shadow-2xl" />
         </div>
     </div>

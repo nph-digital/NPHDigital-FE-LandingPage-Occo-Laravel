@@ -1,5 +1,3 @@
-// Animation GSAP cho section-live: slide/fade-in từng block, chuẩn domain, clean code
-
 document.addEventListener("DOMContentLoaded", function () {
     if (typeof gsap !== "undefined") {
         // Cột trái: slide-in từ trái
@@ -49,5 +47,23 @@ document.addEventListener("DOMContentLoaded", function () {
             { opacity: 0 },
             { opacity: 1, duration: 1, ease: "power2.out", delay: 1.4 }
         );
+        // Phone mockup: parallax effect khi scroll trong section-live
+        if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+            gsap.registerPlugin(ScrollTrigger);
+            const phoneImg = document.getElementById('live-phone-img');
+            const section = document.getElementById('live-col-right');
+            if (phoneImg && section) {
+                gsap.to(phoneImg, {
+                    y: 60,
+                    ease: 'none',
+                    scrollTrigger: {
+                        trigger: section,
+                        start: 'top bottom',
+                        end: 'bottom top',
+                        scrub: 0.7,
+                    }
+                });
+            }
+        }
     }
 });
