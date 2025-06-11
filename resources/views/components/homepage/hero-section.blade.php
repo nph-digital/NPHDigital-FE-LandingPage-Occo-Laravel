@@ -33,8 +33,7 @@
     </div>
 
     <!-- RIGHT: IMAGE HERO -->
-    <div
-        id="hero-col-right"
+    <div id="hero-col-right"
         class="w-full lg:flex-1 flex justify-center items-center relative pt-[20%] mt-[10%] sm:pt-[10%] sm:mt-[5%] md:pt-[5%] md:mt-[2%] lg:pt-0 lg:mt-0">
 
         <!-- Responsive HERO IMAGE WRAPPER -->
