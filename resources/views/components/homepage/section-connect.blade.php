@@ -15,7 +15,8 @@
         <!-- Avatar Left -->
         <div class="flex-1 flex justify-end">
             <div class="relative">
-                <img src="{{ asset('occo/home/item2.webp') }}" alt="Avatar Left" class="w-[350px] sm:w-[220px]" />
+                <img id="connect-avatar-left" src="{{ asset('occo/home/item2.webp') }}" alt="Avatar Left"
+                    class="w-[350px] sm:w-[220px]" />
             </div>
         </div>
         <!-- Center Text -->
@@ -27,10 +28,10 @@
                 quan hệ ý nghĩa, an toàn và đầy thú vị. Thiên Ý dẫn lối – bạn chỉ cần chạm!
             </p>
             <div class="relative flex flex-col items-center mb-2">
-                <img src="{{ asset('occo/home/Gif_(18).gif') }}" alt="Pet" class="w-20 h-20 mb-[-32px] z-20"
-                    style="margin-bottom:-30px;" />
-                <button
-                    class="bg-[#7C4DFF] hover:bg-[#6F3FFF] text-white font-bold rounded-full px-14 py-5 text-2xl shadow-lg transition flex items-center justify-center min-w-[320px] z-50">
+                <img id="connect-pet-gif" src="{{ asset('occo/home/Gif_(18).gif') }}" alt="Pet"
+                    class="w-20 h-20 mb-[-32px] z-20" style="margin-bottom:-30px;" />
+                <button id="connect-download-btn"
+                    class="bg-[#7C4DFF] hover:bg-[#6F3FFF] text-white font-bold rounded-full px-10 py-5 text-2xl shadow-lg transition flex items-center justify-center min-w-[200px] z-50">
                     Tải Occo
                 </button>
             </div>
@@ -38,8 +39,8 @@
         <!-- Avatar Right -->
         <div class="flex-1 flex justify-start ">
             <div class="relative">
-                <img src="{{ asset('occo/home/item.webp') }}" alt="Avatar Right"
-                    class="w-[350px] sm:w-[250px]" />
+                <img id="connect-avatar-right" src="{{ asset('occo/home/item.webp') }}" alt="Avatar Right"
+                    class="w-[350px] sm:w-[220px]" />
             </div>
         </div>
     </div>
