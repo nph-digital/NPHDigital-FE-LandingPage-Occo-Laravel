@@ -21,5 +21,8 @@
     <div class="hidden xl:block">
         <x-homepage.section-pet-occo-mxl />
     </div>
+    <div class="block xl:hidden">
+        <x-homepage.section-pet-occo />
+    </div>
     <x-homepage.section-feedback />
 </div>
