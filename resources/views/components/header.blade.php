@@ -69,30 +69,6 @@
             transform: scaleX(1);
         }
 
-        /* Mobile Sidebar Styles */
-        .mobile-sidebar {
-            position: absolute;
-            top: 72px;
-            left: 0;
-            width: calc(100% - 2rem);
-            margin: 1rem;
-            background: #7545E6;
-            backdrop-filter: blur(10px);
-            transition: opacity 0.3s ease-in-out, visibility 0.3s;
-            z-index: 30;
-            padding: 2rem;
-            border-radius: 20px;
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
-        }
-
-        .mobile-sidebar.active {
-            opacity: 1;
-            visibility: visible;
-            pointer-events: auto;
-        }
-
         /* Hamburger Menu Animation */
         .hamburger {
             width: 24px;
