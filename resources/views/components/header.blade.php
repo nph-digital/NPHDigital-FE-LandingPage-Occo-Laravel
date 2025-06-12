@@ -71,13 +71,11 @@
 
         /* Mobile Sidebar Styles */
         .mobile-sidebar {
-            position: fixed;
-            top: 0;
+            position: absolute;
+            top: 72px;
             right: -100%;
-            width: 80%;
-            max-width: 300px;
-            height: 100vh;
-            background: rgba(164, 140, 240, 0.98);
+            width: 100%;
+            background: #7545E6;
             backdrop-filter: blur(10px);
             transition: right 0.3s ease-in-out;
             z-index: 30;
@@ -86,24 +84,6 @@
 
         .mobile-sidebar.active {
             right: 0;
-        }
-
-        .mobile-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease-in-out;
-            z-index: 25;
-        }
-
-        .mobile-overlay.active {
-            opacity: 1;
-            visibility: visible;
         }
 
         /* Hamburger Menu Animation */

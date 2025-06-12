@@ -1,4 +1,3 @@
-<div class="mobile-overlay" onclick="toggleMobileMenu()"></div>
 <div class="mobile-sidebar">
     <div class="flex flex-col gap-8">
         <div class="flex justify-between items-center">
