@@ -28,7 +28,7 @@
                     class="absolute top-1/2 left-0 w-7 h-7 opacity-80 animate-bounce" style="animation-delay:1s"
                     alt="star" />
 
-                <div class="pl-5 pt-[15%] sm:pt-[10%] md:pt-0">
+                <div class="pl-5 pt-[15%] sm:pt-[10%] lg:pt-0">
                     <h2
                         class="text-[2.2rem] md:text-4xl font-extrabold leading-tight text-[#2196F3] mb-6 relative z-10">
                         Điểm Tín Nhiệm – Xây Dựng Niềm Tin, Mở Rộng Cơ Hội
