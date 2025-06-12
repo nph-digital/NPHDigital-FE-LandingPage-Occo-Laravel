@@ -74,12 +74,14 @@
             position: absolute;
             top: 72px;
             right: -100%;
-            width: 100%;
+            width: calc(100% - 2rem);
+            margin: 1rem;
             background: #7545E6;
             backdrop-filter: blur(10px);
             transition: right 0.3s ease-in-out;
             z-index: 30;
             padding: 2rem;
+            border-radius: 20px;
         }
 
         .mobile-sidebar.active {
