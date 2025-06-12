@@ -79,13 +79,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         }
-        // Slide dưới: trái -> phải
+        // Slide dưới: trái -> phải (tăng tốc độ)
         const iconBotWrapper = document.querySelector('.occo-pet-bot-wrapper');
         if (iconBotWrapper) {
             const iconBotWidth = iconBotWrapper.scrollWidth;
             gsap.to(iconBotWrapper, {
                 x: `${iconBotWidth / 2}px`,
-                duration: 18,
+                duration: 7,
                 ease: 'none',
                 repeat: -1,
                 modifiers: {
@@ -93,5 +93,61 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         }
+
+        // --- Drag-to-scroll cho cả 2 slide ---
+        function enableDrag(wrapper) {
+            let isDown = false;
+            let startX, scrollLeft, lastX, velocity = 0, rafId;
+            wrapper.style.cursor = 'grab';
+            wrapper.addEventListener('mousedown', (e) => {
+                isDown = true;
+                wrapper.style.cursor = 'grabbing';
+                startX = e.pageX - wrapper.offsetLeft;
+                scrollLeft = parseFloat(gsap.getProperty(wrapper, 'x')) || 0;
+                lastX = e.pageX;
+                cancelAnimationFrame(rafId);
+            });
+            wrapper.addEventListener('mouseleave', () => {
+                isDown = false;
+                wrapper.style.cursor = 'grab';
+            });
+            wrapper.addEventListener('mouseup', () => {
+                isDown = false;
+                wrapper.style.cursor = 'grab';
+            });
+            wrapper.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                let x = e.pageX - wrapper.offsetLeft;
+                let walk = x - startX;
+                let newX = scrollLeft + walk;
+                gsap.set(wrapper, { x: newX });
+                velocity = e.pageX - lastX;
+                lastX = e.pageX;
+            });
+            // Mobile support
+            wrapper.addEventListener('touchstart', (e) => {
+                isDown = true;
+                startX = e.touches[0].pageX - wrapper.offsetLeft;
+                scrollLeft = parseFloat(gsap.getProperty(wrapper, 'x')) || 0;
+                lastX = e.touches[0].pageX;
+                cancelAnimationFrame(rafId);
+            });
+            wrapper.addEventListener('touchend', () => {
+                isDown = false;
+            });
+            wrapper.addEventListener('touchmove', (e) => {
+                if (!isDown) return;
+                let x = e.touches[0].pageX - wrapper.offsetLeft;
+                let walk = x - startX;
+                let newX = scrollLeft + walk;
+                gsap.set(wrapper, { x: newX });
+                velocity = e.touches[0].pageX - lastX;
+                lastX = e.touches[0].pageX;
+            });
+        }
+        if (iconTopWrapper) enableDrag(iconTopWrapper);
+        if (iconBotWrapper) enableDrag(iconBotWrapper);
+
     });
 });
