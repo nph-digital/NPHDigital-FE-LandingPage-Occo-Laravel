@@ -62,4 +62,36 @@ document.addEventListener("DOMContentLoaded", function () {
             ease: "power2.out",
         }, "+=0.2"); // bắt đầu SAU KHI icon top kết thúc, không overlap
     }
+
+    // Sau khi hiện xong, thêm hiệu ứng scroll unlimited cho 2 slide ảnh
+    tl.add(() => {
+        // Slide trên: phải -> trái
+        const iconTopWrapper = document.querySelector('.occo-pet-top-wrapper');
+        if (iconTopWrapper) {
+            const iconTopWidth = iconTopWrapper.scrollWidth;
+            gsap.to(iconTopWrapper, {
+                x: `-${iconTopWidth / 2}px`,
+                duration: 18,
+                ease: 'none',
+                repeat: -1,
+                modifiers: {
+                    x: gsap.utils.unitize(x => parseFloat(x) % (iconTopWidth / 2))
+                }
+            });
+        }
+        // Slide dưới: trái -> phải
+        const iconBotWrapper = document.querySelector('.occo-pet-bot-wrapper');
+        if (iconBotWrapper) {
+            const iconBotWidth = iconBotWrapper.scrollWidth;
+            gsap.to(iconBotWrapper, {
+                x: `${iconBotWidth / 2}px`,
+                duration: 18,
+                ease: 'none',
+                repeat: -1,
+                modifiers: {
+                    x: gsap.utils.unitize(x => parseFloat(x) % (iconBotWidth / 2))
+                }
+            });
+        }
+    });
 });

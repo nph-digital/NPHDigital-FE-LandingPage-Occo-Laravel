@@ -57,7 +57,7 @@
 
     {{-- SLIDE ICON TRÊN --}}
     <div class="w-full overflow-none mb-6">
-        <div class="flex gap-8">
+        <div class="occo-pet-top-wrapper flex gap-8">
             @foreach ($iconItemsTop as $i => $item)
                 <img src="{{ asset('occo/home/ga_pet/' . $item) }}" alt="icon" class="occo-icon-top w-[100px] h-auto object-contain"
                     x-show="showText">
@@ -83,7 +83,7 @@
 
     {{-- SLIDE ICON DƯỚI --}}
     <div class="w-full overflow-none mt-6">
-        <div class="flex flex-row-reverse gap-8">
+        <div class="occo-pet-bot-wrapper flex flex-row-reverse gap-8">
             @foreach ($iconItemsBottom as $i => $item)
                 <img src="{{ asset('occo/home/ga_pet/' . $item) }}" alt="icon"
                     class="occo-icon-bot w-[100px] h-auto object-contain" x-show="showText">
