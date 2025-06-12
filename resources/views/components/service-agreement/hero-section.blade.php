@@ -8,7 +8,7 @@
         class="absolute left-0 top-0 h-full z-0 pointer-events-none select-none" />
     <!-- BG Threads right -->
     <img src="{{ asset('occo/privacy/Threads-r.png') }}" alt="Threads Right"
-        class="absolute right-0 top-0 h-full z-0 pointer-events-none select-none" />
+        class="absolute right-0 top-0 h-full z-0 pointer-events-none select-none hidden md:block" />
     <div class="pt-20 pb-8 z-10 flex flex-col items-center">
         <h1 class="text-5xl md:text-6xl font-extrabold text-[#824DFF] mb-2 drop-shadow">OCCO</h1>
         <div class="text-2xl md:text-3xl font-semibold text-[#6D3AFF] mb-6">Thỏa thuận dịch vụ</div>
