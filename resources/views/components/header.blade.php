@@ -42,8 +42,6 @@
         </button>
     </div>
 
-    <!-- Mobile Sidebar -->
-    @include('components.nav-mobile')
 
     <style>
         .nav-anim {
@@ -102,3 +100,4 @@
         }
     </style>
 </header>
+@include('components.nav-mobile')

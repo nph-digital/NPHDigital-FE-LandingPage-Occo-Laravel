@@ -1,4 +1,7 @@
-<div class="mobile-sidebar">
+<div
+    class="mobile-overlay absolute left-0 right-0 bottom-0 top-[72px] z-20 bg-gradient-to-b from-white/80 to-white/0 opacity-0 pointer-events-none transition-opacity duration-300 backdrop-blur-md">
+</div>
+<div class="mobile-sidebar z-30">
     <div class="flex flex-col gap-8">
         <div class="flex justify-between items-center">
             <span class="text-white text-xl font-bold">Menu</span>
@@ -27,8 +30,8 @@
         </nav>
     </div>
     <style>
-         /* Mobile Sidebar Styles */
-         .mobile-sidebar {
+        /* Mobile Sidebar Styles */
+        .mobile-sidebar {
             position: absolute;
             top: 72px;
             left: 0;
@@ -57,6 +60,11 @@
         const sidebar = document.querySelector('.mobile-sidebar');
         const overlay = document.querySelector('.mobile-overlay');
         const hamburger = document.querySelector('.hamburger');
+        // Toggle overlay đồng bộ với sidebar
+        overlay.classList.toggle('opacity-0');
+        overlay.classList.toggle('pointer-events-none');
+        overlay.classList.toggle('opacity-100');
+        overlay.classList.toggle('pointer-events-auto');
 
         sidebar.classList.toggle('active');
         overlay.classList.toggle('active');
