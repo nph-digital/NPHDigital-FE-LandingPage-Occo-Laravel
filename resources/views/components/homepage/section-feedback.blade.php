@@ -49,7 +49,7 @@
                     @endphp
                     @foreach ($feedbacks as $fb)
                         <div class="swiper-slide">
-                            <div class="bg-white rounded-[2vw] flex flex-col overflow-hidden relative px-0 pt-0 pb-6">
+                            <div class="bg-white rounded-[2.2rem] flex flex-col overflow-hidden relative px-0 pt-0 pb-6">
                                 <div class="relative p-4">
                                     <img src="{{ asset($fb['image']) }}" alt="Ảnh feedback"
                                         class="w-full object-cover object-center rounded-[1.2rem] aspect-[9/12]" />
