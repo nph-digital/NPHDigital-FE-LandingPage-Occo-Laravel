@@ -1,5 +1,5 @@
 <div
-    class="mobile-overlay absolute left-0 right-0 bottom-0 top-[72px] z-20 bg-gradient-to-b from-white/80 to-white/0 opacity-0 pointer-events-none transition-opacity duration-300 backdrop-blur-md">
+    class="mobile-overlay absolute left-0 right-0 bottom-0 top-[72px] z-20 bg-gradient-to-b from-white/80 to-white/0 opacity-0 pointer-events-none transition-opacity duration-300 backdrop-blur-md blur-gradient-mask">
 </div>
 <div class="mobile-sidebar z-30">
     <div class="flex flex-col gap-8">
@@ -30,6 +30,11 @@
         </nav>
     </div>
     <style>
+        .blur-gradient-mask {
+            -webkit-mask-image: linear-gradient(to bottom, #fff 80%, transparent 100%);
+            mask-image: linear-gradient(to bottom, #fff 80%, transparent 100%);
+        }
+
         /* Mobile Sidebar Styles */
         .mobile-sidebar {
             position: absolute;
