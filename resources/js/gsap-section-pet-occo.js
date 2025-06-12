@@ -60,6 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             duration: 0.55,
             ease: "power2.out",
-        }, ">-0.15"); // bắt đầu ngay sau icon top, overlap nhẹ
+        }, "+=0.2"); // bắt đầu SAU KHI icon top kết thúc, không overlap
     }
 });
