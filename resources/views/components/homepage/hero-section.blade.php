@@ -34,7 +34,7 @@
 
     <!-- RIGHT: IMAGE HERO -->
     <div id="hero-col-right"
-        class="w-full lg:flex-1 flex justify-center items-center relative pt-[20%] mt-[10%] sm:pt-[10%] sm:mt-[5%] md:pt-[5%] md:mt-[2%] lg:pt-0 lg:mt-0">
+        class="w-full lg:flex-1 flex justify-center items-center relative pt-[20%] mt-[10%] sm:pt-[10%] sm:mt-[5%] md:pt-[5%] md:mt-[2%] lg:pt-0 lg:mt-0 zoom-75-mobile">
 
         <!-- Responsive HERO IMAGE WRAPPER -->
         <div
@@ -78,3 +78,11 @@
         <img src="{{ asset('occo/home/Gif_(18).gif') }}" alt="Decoration" class="object-cover w-[220px] lg:w-[350px]">
     </div>
 </div>
+
+<style>
+@media (max-width: 400px) {
+  .zoom-75-mobile {
+    zoom: 0.75;
+  }
+}
+</style>
