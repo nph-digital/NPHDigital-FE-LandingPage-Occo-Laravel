@@ -1,5 +1,5 @@
 <section class="relative w-full py-16 bg-gradient-to-br from-[#B18CFF] to-[#A6D0FF] overflow-hidden">
-    <div class="max-w-7xl mx-auto px-24 relative z-10">
+    <div class="max-w-7xl mx-auto px-15 relative z-10">
         <div class="relative">
             <!-- Image balls -->
             <img src="{{ asset('occo/ball/Ball2@4x.webp') }}" alt="Ball 1" aria-hidden="true"
