@@ -1,16 +1,8 @@
 <div
-    class="mobile-overlay absolute left-0 right-0 bottom-0 top-[72px] z-20 bg-gradient-to-b from-white/80 to-white/0 opacity-0 pointer-events-none transition-opacity duration-300 backdrop-blur-md blur-gradient-mask">
+    class="mobile-overlay fixed left-0 right-0 bottom-0 top-[72px] z-20 bg-gradient-to-b from-[#7545E6]/80 to-transparent opacity-0 pointer-events-none transition-opacity duration-300 backdrop-blur-md blur-gradient-mask">
 </div>
-<div class="mobile-sidebar z-30">
+<div class="mobile-sidebar fixed z-30 top-[72px] left-0 right-0">
     <div class="flex flex-col gap-8">
-        <div class="flex justify-between items-center">
-            <span class="text-white text-xl font-bold">Menu</span>
-            <button class="hamburger active" onclick="toggleMobileMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
         <nav class="flex flex-col gap-6">
             <a href="{{ Route::has('home') ? route('home') : '#' }}"
                 class="text-white text-lg font-medium hover:text-white/80 transition pb-1 {{ request()->routeIs('home') ? 'border-b-2 border-white' : '' }}">Trang
@@ -31,15 +23,13 @@
     </div>
     <style>
         .blur-gradient-mask {
-            -webkit-mask-image: linear-gradient(to bottom, #fff 80%, transparent 100%);
-            mask-image: linear-gradient(to bottom, #fff 80%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, #7545E6 80%, transparent 100%);
+            mask-image: linear-gradient(to bottom, #7545E6 80%, transparent 100%);
         }
 
         /* Mobile Sidebar Styles */
         .mobile-sidebar {
-            position: absolute;
-            top: 72px;
-            left: 0;
+            /* Đã chuyển sang fixed bằng Tailwind, không cần position absolute và top/left ở đây */
             width: calc(100% - 2rem);
             margin: 1rem;
             background: #7545E6;
