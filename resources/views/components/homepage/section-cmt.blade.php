@@ -9,18 +9,18 @@
                     ],
                     [
                         'text' => 'Biến những phút rảnh rỗi của tôi thành những khoảnh khắc vui vẻ có ý nghĩa.',
-                        'user' => '@HOANGTAM',
+                        'user' => '@TRANMAI',
                     ],
                     [
                         'text' => 'Không gian trò chuyện mà tôi luôn tìm kiếm. Vào một lần là không muốn thoát ra.',
-                        'user' => '@HOANGTAM',
+                        'user' => '@LEQUANG',
                     ],
                     [
                         'text' =>
                             'Tôi từng nghĩ chỉ để nói chuyện. Giờ tôi thấy nó là nơi kết nối và thể hiện bản thân.',
-                        'user' => '@HOANGTAM',
+                        'user' => '@PHAMHUY',
                     ],
-                    ['text' => 'App giúp tôi tự tin chia sẻ và kết nối với mọi người hơn.', 'user' => '@HOANGTAM'],
+                    ['text' => 'App giúp tôi tự tin chia sẻ và kết nối với mọi người hơn.', 'user' => '@BUIDUC'],
                     ['text' => 'Cộng đồng vui vẻ, nhiều bạn mới, trải nghiệm tuyệt vời!', 'user' => '@LINHNGO'],
                     ['text' => 'Mỗi ngày đều có chuyện hay để kể, không còn cô đơn.', 'user' => '@MINHTHU'],
                     ['text' => 'Chất lượng âm thanh rất tốt, dễ dùng, dễ kết nối.', 'user' => '@TRUONGVU'],

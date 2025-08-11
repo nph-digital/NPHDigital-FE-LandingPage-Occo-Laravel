@@ -27,7 +27,17 @@
                 class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
                 <img src="{{ asset('occo/home/apple.png') }}" alt="App Store" class="mr-2 w-6">
                 <span class="text-xs text-gray-900 font-semibold leading-4">Download on the<br><span
-                        class="text-lg font-bold">App Store</span></span>
+                        class="text-lg font-bold">iOS</span></span>
+            </a>
+            <a href="javascript:void(0)" onclick="openComingModal()" class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
+                <img src="{{ asset('occo/home/windows.png') }}" alt="Windows" class="mr-2 w-6">
+                <span class="text-xs text-gray-900 font-semibold leading-4">Download for<br><span
+                        class="text-lg font-bold">Windows</span></span>
+            </a>
+            <a href="javascript:void(0)" onclick="openComingModal()" class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
+                <img src="{{ asset('occo/home/apple.png') }}" alt="macOS" class="mr-2 w-6">
+                <span class="text-xs text-gray-900 font-semibold leading-4">Download for<br><span
+                        class="text-lg font-bold">macOS</span></span>
             </a>
         </div>
     </div>
@@ -80,9 +90,9 @@
 </div>
 
 <style>
-@media (max-width: 400px) {
-  .zoom-75-mobile {
-    zoom: 0.75;
-  }
-}
+    @media (max-width: 400px) {
+        .zoom-75-mobile {
+            zoom: 0.75;
+        }
+    }
 </style>
