@@ -1,4 +1,4 @@
-<section id="hero-section"
+<section id="hero-section-contact"
     class="relative min-h-[420px] flex flex-col -z-10 items-center justify-center bg-gradient-to-br from-[#FFA4F6] to-[#B7DCFF] overflow-hidden pt-24">
     <!-- BG Pattern center -->
     <img src="{{ asset('occo/privacy/Pattern.png') }}" alt="Pattern BG"

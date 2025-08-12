@@ -1,4 +1,4 @@
-<div class="relative z-10 container mx-auto px-4 pt-8 pb-12 flex flex-col-reverse lg:flex-row items-center min-h-screen">
+<div id="hero-section-home" class="relative z-10 container mx-auto px-4 pt-8 pb-12 flex flex-col-reverse lg:flex-row items-center min-h-screen">
     <!-- BG BALLS EFFECT -->
     @include('components.homepage.includes.ball-hero-section')
     <!-- BG DOTS EFFECT -->
