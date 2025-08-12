@@ -17,14 +17,15 @@ class Contact extends Component
     public $email = '';
     public $topic = '';
     public $message = '';
-    public $image;
+    public $images = [];
 
     protected $rules = [
         'name' => 'required|string|max:255',
         'email' => 'required|email|max:255',
         'topic' => 'required|string|in:bug_report,feedback,cooperation,other',
         'message' => 'required|string|min:10',
-        'image' => 'nullable|image|max:3072', // 3MB max
+        'images' => 'nullable|array|max:3', // tối đa 3 ảnh
+        'images.*' => 'image|max:3072', // mỗi ảnh tối đa 3MB
     ];
 
     protected $messages = [
@@ -35,8 +36,10 @@ class Contact extends Component
         'topic.in' => 'Chủ đề không hợp lệ.',
         'message.required' => 'Vui lòng nhập nội dung tin nhắn.',
         'message.min' => 'Nội dung tin nhắn phải có ít nhất 10 ký tự.',
-        'image.image' => 'File tải lên phải là hình ảnh.',
-        'image.max' => 'Kích thước hình ảnh không được vượt quá 3MB.',
+        'images.array' => 'Định dạng không hợp lệ.',
+        'images.max' => 'Chỉ cho phép tải lên tối đa 3 ảnh.',
+        'images.*.image' => 'Mỗi file phải là hình ảnh hợp lệ.',
+        'images.*.max' => 'Mỗi ảnh không được vượt quá 3MB.',
     ];
 
     public function submitForm()
@@ -44,10 +47,12 @@ class Contact extends Component
         $this->validate();
 
         try {
-            // Handle image upload if present
-            $imagePath = null;
-            if ($this->image) {
-                $imagePath = $this->image->store('contact-images', 'public');
+            // Handle images upload if present
+            $imagePaths = [];
+            if (!empty($this->images)) {
+                foreach ($this->images as $img) {
+                    $imagePaths[] = $img->store('contact-images', 'public');
+                }
             }
 
             // Prepare email data
@@ -56,7 +61,7 @@ class Contact extends Component
                 'email' => $this->email,
                 'topic' => $this->getTopicLabel($this->topic),
                 'message' => $this->message,
-                'image_path' => $imagePath,
+                'image_paths' => $imagePaths,
                 'submitted_at' => now()->format('d/m/Y H:i:s'),
             ];
 
@@ -73,19 +78,18 @@ class Contact extends Component
             }
 
             // Generate a public URL for the uploaded image
-            $imageUrl = null;
-            if ($imagePath) {
-                // Ensure the file exists and is accessible
-                if (Storage::disk('public')->exists($imagePath)) {
-                    $imageUrl = asset('storage/' . $imagePath);
-
-                    // Add timestamp to prevent caching
-                    $imageUrl .= '?t=' . now()->timestamp;
-
-                    // Log for debugging
-                    \Log::info('Generated image URL:', ['url' => $imageUrl]);
-                } else {
-                    \Log::error('Image file not found:', ['path' => $imagePath]);
+            $imageUrls = [];
+            if (!empty($imagePaths)) {
+                foreach ($imagePaths as $path) {
+                    if (Storage::disk('public')->exists($path)) {
+                        $url = asset('storage/' . $path) . '?t=' . now()->timestamp;
+                        $imageUrls[] = $url;
+                    } else {
+                        Log::error('Image file not found:', ['path' => $path]);
+                    }
+                }
+                if (!empty($imageUrls)) {
+                    Log::info('Generated image URLs:', ['urls' => $imageUrls]);
                 }
             }
 
@@ -131,13 +135,18 @@ class Contact extends Component
                 'timestamp' => now()->toIso8601String()
             ];
 
-            // Add image if exists
-            if ($imageUrl) {
-                $embed['image'] = ['url' => $imageUrl];
-                // Also add image URL as a field for better visibility
+            // Add images if exist
+            if (!empty($imageUrls)) {
+                // Hiển thị ảnh đầu tiên ở embed image
+                $embed['image'] = ['url' => $imageUrls[0]];
+                // Thêm danh sách link ảnh (tối đa 3)
+                $links = [];
+                foreach ($imageUrls as $i => $u) {
+                    $links[] = ($i + 1) . '. [Ảnh ' . ($i + 1) . '](' . $u . ')';
+                }
                 $embed['fields'][] = [
                     'name' => '📎 Đính kèm',
-                    'value' => '[Xem ảnh đính kèm](' . $imageUrl . ')',
+                    'value' => implode("\n", $links),
                     'inline' => false
                 ];
             }
@@ -166,7 +175,7 @@ class Contact extends Component
             }
 
             // Reset form
-            $this->reset(['name', 'email', 'topic', 'message', 'image']);
+            $this->reset(['name', 'email', 'topic', 'message', 'images']);
 
             // Show success message
             session()->flash('message', 'Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.');
@@ -187,13 +196,16 @@ class Contact extends Component
         return $topics[$topic] ?? $topic;
     }
 
-    public function removeImage()
+    public function removeImage($index)
     {
-        // Xóa file upload tạm thời của Livewire bằng cách đặt lại thuộc tính
-        $this->image = null;
-        // Xóa lỗi validate liên quan đến 'image' (nếu có)
-        $this->resetErrorBag('image');
-        $this->resetValidation('image');
+        // Xóa 1 ảnh upload tạm thời theo index
+        if (isset($this->images[$index])) {
+            unset($this->images[$index]);
+            $this->images = array_values($this->images);
+        }
+        // Xóa lỗi validate liên quan đến images
+        $this->resetErrorBag(['images', 'images.*']);
+        $this->resetValidation(['images', 'images.*']);
     }
 
     public function render()
