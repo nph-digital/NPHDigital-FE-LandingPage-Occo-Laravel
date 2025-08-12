@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\RateLimiter;
 
 class Contact extends Component
 {
@@ -44,6 +45,20 @@ class Contact extends Component
 
     public function submitForm()
     {
+        // Rate limit: tối đa 3 lần trong 120 giây theo IP
+        $key = 'contact:' . request()->ip();
+        $maxAttempts = 3;
+        $decaySeconds = 120;
+
+        if (RateLimiter::tooManyAttempts($key, $maxAttempts)) {
+            $seconds = RateLimiter::availableIn($key);
+            session()->flash('error', 'Bạn đã gửi quá nhiều lần. Vui lòng thử lại sau ' . $seconds . ' giây.');
+            return;
+        }
+
+        // Ghi nhận 1 lần thử gửi
+        RateLimiter::hit($key, $decaySeconds);
+
         $this->validate();
 
         try {
