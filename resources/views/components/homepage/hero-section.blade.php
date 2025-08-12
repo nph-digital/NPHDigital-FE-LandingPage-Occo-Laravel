@@ -18,12 +18,12 @@
         </p>
         <!-- Download Buttons -->
         <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 z-20">
-            <a href="#" class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
+            <a href="javascript:void(0)" onclick="openBetaModal()" class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
                 <img src="{{ asset('occo/home/chplay.png') }}" alt="CH Play" class="mr-2 w-6">
                 <span class="text-xs text-gray-900 font-semibold leading-4">Download on the<br><span
                         class="text-lg font-bold">CH Play</span></span>
             </a>
-            <a href="#"
+            <a href="javascript:void(0)" onclick="openBetaModal()"
                 class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
                 <img src="{{ asset('occo/home/apple.png') }}" alt="App Store" class="mr-2 w-6">
                 <span class="text-xs text-gray-900 font-semibold leading-4">Download on the<br><span

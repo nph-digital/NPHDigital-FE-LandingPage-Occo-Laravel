@@ -11,13 +11,13 @@
                 </h2>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 w-full max-w-md z-20">
-                <a href="#"
+                <a href="javascript:void(0)" onclick="openBetaModal()"
                     class="flex items-center justify-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition w-full sm:w-auto">
                     <img src="{{ asset('occo/home/chplay.png') }}" alt="CH Play" class="mr-2 w-6 md:w-7">
                     <span class="text-xs text-gray-900 font-semibold leading-4">Download on the<br><span
                             class="text-lg font-bold">CH Play</span></span>
                 </a>
-                <a href="#"
+                <a href="javascript:void(0)" onclick="openBetaModal()"
                     class="flex items-center justify-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition w-full sm:w-auto">
                     <img src="{{ asset('occo/home/apple.png') }}" alt="App Store" class="mr-2 w-6 md:w-7">
                     <span class="text-xs text-gray-900 font-semibold leading-4">Download on the<br><span
@@ -60,7 +60,7 @@
             <div class="flex flex-col gap-2 w-full items-center md:items-start">
                 <div class="flex items-center gap-2 text-white/80 text-base justify-center md:justify-start">
                     <img src="{{ asset('occo/mail.svg') }}" alt="Mail" class="w-5 h-5">
-                    <a href="mailto:support@occo.vn" aria-label="Gửi email đến support@occo.vn" class="hover:text-white transition">support@occo.vn</a>
+                    <a href="mailto:contact@occo.vn" aria-label="Gửi email đến contact@occo.vn" class="hover:text-white transition">contact@occo.vn</a>
                 </div>
                 <div class="flex items-center gap-2 text-white/80 text-base justify-center md:justify-start">
                     <img src="{{ asset('occo/phone.svg') }}" alt="Phone" class="w-5 h-5">

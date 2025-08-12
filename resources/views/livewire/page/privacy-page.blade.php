@@ -106,7 +106,7 @@
                 Nếu có bất kỳ câu hỏi hoặc muốn báo cáo vi phạm, bạn có thể liên hệ với đội ngũ hỗ trợ của Occo qua các kênh sau:
                 <ul>
                     <li>Chat trực tiếp tại Occo: UID 111</li>
-                    <li>Email Hỗ Trợ Khách Hàng: support@occo.vn</li>
+                    <li>Email Hỗ Trợ Khách Hàng: contact@occo.vn</li>
                     <li>Số Điện Thoại Hỗ Trợ Khách Hàng: 1800 3108 (hoạt động 24/7)</li>
                     <li>Địa Chỉ Văn Phòng: Số 838, Ấp Vĩnh Bình, Phường Tân An, Tây Ninh, Việt Nam</li>
                 </ul>
