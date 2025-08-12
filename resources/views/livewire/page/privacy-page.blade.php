@@ -107,8 +107,8 @@
                 <ul>
                     <li>Chat trực tiếp tại Occo: UID 111</li>
                     <li>Email Hỗ Trợ Khách Hàng: support@occo.vn</li>
-                    <li>Số Điện Thoại Hỗ Trợ Khách Hàng: 0399961368 (hoạt động 24/7)</li>
-                    <li>Địa Chỉ Văn Phòng: Số 838 Ấp Vĩnh Bình, Xã An Vĩnh Ngãi, Tp Tân An, Tỉnh Long An, Việt Nam</li>
+                    <li>Số Điện Thoại Hỗ Trợ Khách Hàng: 1800 3108 (hoạt động 24/7)</li>
+                    <li>Địa Chỉ Văn Phòng: Số 838, Ấp Vĩnh Bình, Phường Tân An, Tây Ninh, Việt Nam</li>
                 </ul>
             </ol>
 

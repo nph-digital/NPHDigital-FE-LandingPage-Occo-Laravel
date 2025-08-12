@@ -30,10 +30,10 @@
             <div class="relative flex flex-col items-center mb-2">
                 <img id="connect-pet-gif" src="{{ asset('occo/home/Gif_(18).gif') }}" alt="Pet"
                     class="w-20 h-20 mb-[-32px] z-20" style="margin-bottom:-30px;" />
-                <button id="connect-download-btn"
+                <a href="javascript:void(0)" onclick="openDownloadModal()" id="connect-download-btn"
                     class="bg-[#7C4DFF] hover:bg-[#6F3FFF] text-white font-bold rounded-full px-10 py-5 text-2xl shadow-lg transition flex items-center justify-center min-w-[200px] z-50">
                     Tải Occo
-                </button>
+                </a>
             </div>
         </div>
         <!-- Avatar Right -->

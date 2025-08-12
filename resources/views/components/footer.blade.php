@@ -64,7 +64,7 @@
                 </div>
                 <div class="flex items-center gap-2 text-white/80 text-base justify-center md:justify-start">
                     <img src="{{ asset('occo/phone.svg') }}" alt="Phone" class="w-5 h-5">
-                    <a href="tel:18003108" aria-label="Gọi số +84 399 961 368" class="hover:text-white transition">+84 399 961 368</a>
+                    <a href="tel:18003108" aria-label="Gọi số 1800 3108" class="hover:text-white transition">1800 3108</a>
                 </div>
                 <div class="flex items-start gap-2 text-white/80 text-base justify-center md:justify-start">
                     <img src="{{ asset('occo/map.svg') }}" alt="Map" class="w-6 h-6 mt-1">

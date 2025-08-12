@@ -20,7 +20,7 @@
                 <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2"
                     stroke-linecap="round" />
             </svg>
-            <input type="text" placeholder="Tìm kiếm theo điều khoản"
+            <input type="text" placeholder="Tìm kiếm"
                 class="flex-1 bg-transparent outline-none text-base text-gray-700 placeholder-gray-400" />
         </form>
     </div>

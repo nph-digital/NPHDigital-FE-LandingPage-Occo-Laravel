@@ -60,6 +60,7 @@
     {{ $slot }}
     <x-footer />
     <x-modal-alert-coming />
+    <x-modal-download-app />
 </body>
 
 </html>

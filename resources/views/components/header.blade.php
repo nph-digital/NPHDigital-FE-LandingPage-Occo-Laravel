@@ -2,7 +2,7 @@
     class="fixed top-0 z-20 w-full px-6 md:px-24 py-4 mx-auto flex items-center justify-between shadow-lg backdrop-blur-lg bg-gradient-to-b from-[#a48cf0]/80 to-transparent transition-all duration-300">
     <div class="flex items-center gap-3">
         <a href="{{ Route::has('home') ? route('home') : '#' }}">
-            <img src="{{ asset('occo/logo.png') }}" alt="OCCO Logo"
+            <img src="{{ asset('occo/logo4.png') }}" alt="OCCO Logo"
                 class="h-10 transition-transform duration-300 hover:scale-110 hover:rotate-2 cursor-pointer" />
         </a>
         <div class="flex flex-col">
