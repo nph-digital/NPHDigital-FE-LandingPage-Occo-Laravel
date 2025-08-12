@@ -19,6 +19,7 @@ class Contact extends Component
     public $topic = '';
     public $message = '';
     public $images = [];
+    public $url_logo_app = 'https://occo.vn/occo/logo-app-occo.webp';
 
     protected $rules = [
         'name' => 'required|string|max:255',
@@ -124,7 +125,7 @@ class Contact extends Component
                 'title' => '📬 LIÊN HỆ MỚI TỪ OCCO',
                 'color' => 0x6F42C1, // Purple color
                 'thumbnail' => [
-                    'url' => 'https://occo.vn/occo/logo2.png' // OCCO logo or relevant icon
+                    'url' => $this->url_logo_app // OCCO logo or relevant icon
                 ],
                 'fields' => [
                     [
@@ -145,7 +146,7 @@ class Contact extends Component
                 ],
                 'footer' => [
                     'text' => 'OCCO Contact Form',
-                    'icon_url' => 'https://occo.vn/occo/logo2.png'
+                    'icon_url' => $this->url_logo_app
                 ],
                 'timestamp' => now()->toIso8601String()
             ];
@@ -170,7 +171,7 @@ class Contact extends Component
             $payload = [
                 'content' => '🔔 **Có liên hệ mới từ website OCCO**',
                 'username' => 'OCCO Contact Bot',
-                'avatar_url' => 'https://occo.vn/occo/logo2.png',
+                'avatar_url' => $this->url_logo_app,
                 'embeds' => [$embed],
             ];
 

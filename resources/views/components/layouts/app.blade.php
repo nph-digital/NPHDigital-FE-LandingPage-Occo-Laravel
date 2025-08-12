@@ -45,9 +45,9 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/*"
-        href="{{ asset('occo/logo2.png') }}">
+        href="{{ asset('occo/logo-app-occo.webp') }}">
     <link rel="apple-touch-icon"
-        href="{{ asset('occo/logo2.png') }}">
+        href="{{ asset('occo/logo-app-occo.webp') }}">
 
     @if (app()->environment('local'))
         @vite(['resources/css/app.css', 'resources/js/app.js'])
