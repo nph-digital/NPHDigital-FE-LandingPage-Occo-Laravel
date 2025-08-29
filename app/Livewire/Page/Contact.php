@@ -16,6 +16,7 @@ class Contact extends Component
 
     public $name = '';
     public $email = '';
+    public $phone = '';
     public $topic = '';
     public $message = '';
     public $images = [];
@@ -24,6 +25,7 @@ class Contact extends Component
     protected $rules = [
         'name' => 'required|string|max:255',
         'email' => 'required|email|max:255',
+        'phone' => 'required|string|max:20',
         'topic' => 'required|string|in:bug_report,feedback,cooperation,other',
         'message' => 'required|string|min:10',
         'images' => 'nullable|array|max:3', // tối đa 3 ảnh
@@ -34,6 +36,8 @@ class Contact extends Component
         'name.required' => 'Vui lòng nhập tên của bạn.',
         'email.required' => 'Vui lòng nhập địa chỉ email.',
         'email.email' => 'Địa chỉ email không hợp lệ.',
+        'phone.required' => 'Vui lòng nhập số điện thoại.',
+        'phone.max' => 'Số điện thoại không được vượt quá 20 ký tự.',
         'topic.required' => 'Vui lòng chọn chủ đề.',
         'topic.in' => 'Chủ đề không hợp lệ.',
         'message.required' => 'Vui lòng nhập nội dung tin nhắn.',
@@ -75,6 +79,7 @@ class Contact extends Component
             $emailData = [
                 'name' => $this->name,
                 'email' => $this->email,
+                'phone' => $this->phone,
                 'topic' => $this->getTopicLabel($this->topic),
                 'message' => $this->message,
                 'image_paths' => $imagePaths,
@@ -130,7 +135,7 @@ class Contact extends Component
                 'fields' => [
                     [
                         'name' => '👤 **Thông tin khách hàng**',
-                        'value' => "**Tên:** {$this->name}\n**Email:** {$this->email}",
+                        'value' => "**Tên:** {$this->name}\n**Email:** {$this->email}\n**SĐT:** {$this->phone}",
                         'inline' => false
                     ],
                     [
@@ -191,7 +196,7 @@ class Contact extends Component
             }
 
             // Reset form
-            $this->reset(['name', 'email', 'topic', 'message', 'images']);
+            $this->reset(['name', 'email', 'phone', 'topic', 'message', 'images']);
 
             // Show success message
             session()->flash('message', 'Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.');
