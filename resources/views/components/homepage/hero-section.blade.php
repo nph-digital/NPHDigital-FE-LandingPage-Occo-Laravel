@@ -21,13 +21,13 @@
             <a href="https://play.google.com/store/apps/details?id=com.occo.product" target="_blank" class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
                 <img src="{{ asset('occo/home/chplay.png') }}" alt="CH Play" class="mr-2 w-6">
                 <span class="text-xs text-gray-900 font-semibold leading-4">Get it on<br><span
-                        class="text-lg font-bold">CH Play</span></span>
+                        class="text-lg font-bold">Google Play</span></span>
             </a>
             <a href="https://apps.apple.com/vn/app/occo-n%C6%A1i-m%E1%BB%8Di-k%E1%BA%BFt-n%E1%BB%91i-b%E1%BA%AFt-%C4%91%E1%BA%A7u/id6749883710?l=vi&platform=iphone" target="_blank"
                 class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
                 <img src="{{ asset('occo/home/apple.png') }}" alt="App Store" class="mr-2 w-6">
                 <span class="text-xs text-gray-900 font-semibold leading-4">Download on the<br><span
-                        class="text-lg font-bold">iOS</span></span>
+                        class="text-lg font-bold">App Store</span></span>
             </a>
             <a href="javascript:void(0)" onclick="openComingModal()" class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
                 <img src="{{ asset('occo/home/windows.png') }}" alt="Windows" class="mr-2 w-6">
