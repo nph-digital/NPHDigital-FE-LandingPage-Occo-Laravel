@@ -198,7 +198,7 @@
                                 <i class="fa-solid fa-building text-blue-600 text-2xl" aria-hidden="true"></i>
                             </div>
                             <div>
-                                <p class="text-sm font-medium text-gray-500 mb-1">Tên công ty</p>
+                                <p class="text-sm font-medium text-gray-500 mb-1">Đơn vị phát triển</p>
                                 <p class="font-semibold text-gray-800">Công ty TNHH NPH Digital</p>
                             </div>
                         </div>
@@ -259,6 +259,10 @@
                             <a href="https://zalo.me/2599746016148700210"
                                 class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">
                                 <i class="fas fa-comments"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@nphdigital838"
+                                class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300">
+                                <i class="fab fa-youtube"></i>
                             </a>
                         </div>
                     </div>

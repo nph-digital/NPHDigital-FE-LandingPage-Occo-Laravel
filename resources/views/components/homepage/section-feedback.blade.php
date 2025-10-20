@@ -19,8 +19,8 @@
                     @php
                         $feedbacks = [
                             [
-                                'image' => 'occo/home/1.png',
-                                'avatar' => 'occo/home/a1.png',
+                                'image' => 'occo/home/family2.jpg',
+                                'avatar' => 'occo/home/eeee.jpeg',
                                 'name' => 'Trúc Mai',
                                 'nation' => 'Vietnam',
                                 'badge' => 'Kì cựu',
@@ -29,7 +29,7 @@
                             ],
                             [
                                 'image' => 'occo/home/2.png',
-                                'avatar' => 'occo/home/a2.png',
+                                'avatar' => 'occo/home/acd1.jpeg',
                                 'name' => 'Khoa Nguyễn',
                                 'nation' => 'Vietnam',
                                 'badge' => 'Kì cựu',
@@ -37,8 +37,8 @@
                                     'Cảm ơn Occo đã lưu lại những kỉ niệm đẹp về gia đình tôi. Cả nhà tôi đều diện và nhân tin với nhau bằng Occo. Rất thích luôn',
                             ],
                             [
-                                'image' => 'occo/home/3.png',
-                                'avatar' => 'occo/home/a3.png',
+                                'image' => 'occo/home/family.jpg',
+                                'avatar' => 'occo/home/mp.webp',
                                 'name' => 'Mai Phương',
                                 'nation' => 'Vietnam',
                                 'badge' => 'Kì cựu',

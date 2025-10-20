@@ -48,7 +48,7 @@
                 <p>Đứng sau OCCO không phải là những tập đoàn lớn, mà là chúng tôi – NPH DIGITAL – những kỹ sư CNTT
                     Gen Z: người Việt trẻ tuổi, tài năng và giàu khát vọng.</p>
                 <p>Chúng tôi cũng là người dùng mạng xã hội mỗi ngày, thấu hiểu sự bất tiện, nỗi lo và mong muốn của
-                    thế hệ mình. Vì vậy, chúng tôi dùng chính mã nguồn và trí tuệ Việt để tạo ra một sản phẩm “make
+                    thế hệ mình. Vì vậy, chúng tôi dùng chính mã nguồn và trí tuệ Việt để tạo ra một sản phẩm made
                     in Vietnam” khác biệt, đủ sức cạnh tranh với thế giới.</p>
 
                 <h2>Hãy trở thành một phần của OCCO!</h2>

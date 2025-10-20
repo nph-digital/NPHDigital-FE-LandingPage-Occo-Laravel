@@ -6,15 +6,15 @@
             <div>
                 <h2
                     class="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-snug drop-shadow-[0_2px_8px_rgba(255,255,255,0.6)]">
-                    Tải xuống ứng dụng để kết bạn,<br>
-                    tương tác, chia sẻ, giải trí
+                    Kết bạn - Trò chuyện - Giải trí cực đã,
+                    tất cả gói gọn trong 1 ứng dụng
                 </h2>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 w-full max-w-md z-20">
-                <a href="javascript:void(0)" onclick="openBetaModal()"
+                <a href="https://play.google.com/store/apps/details?id=com.occo.product" target="_blank"
                     class="flex items-center justify-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition w-full sm:w-auto">
                     <img src="{{ asset('occo/home/chplay.png') }}" alt="CH Play" class="mr-2 w-6 md:w-7">
-                    <span class="text-xs text-gray-900 font-semibold leading-4">Download on the<br><span
+                    <span class="text-xs text-gray-900 font-semibold leading-4">Get it on<br><span
                             class="text-lg font-bold">CH Play</span></span>
                 </a>
                 <a href="https://apps.apple.com/vn/app/occo-n%C6%A1i-m%E1%BB%8Di-k%E1%BA%BFt-n%E1%BB%91i-b%E1%BA%AFt-%C4%91%E1%BA%A7u/id6749883710?l=vi&platform=iphone" target="_blank"
@@ -36,7 +36,7 @@
                             class="text-lg font-bold">macOS</span></span>
                 </a>
             </div>
-            <p class="mt-2 text-white/80 text-sm">Version 1.0.0 Beta</p>
+            <p class="mt-2 text-white/80 text-sm">Version 1.0.1 Beta</p>
         </div>
 
         <!-- Cột giữa: About -->
@@ -69,6 +69,10 @@
                 <div class="flex items-start gap-2 text-white/80 text-base justify-center md:justify-start">
                     <img src="{{ asset('occo/map.svg') }}" alt="Map" class="w-6 h-6 mt-1">
                     <span class="break-words">Số 838, Ấp Vĩnh Bình, Phường Tân An, Tây Ninh</span>
+                </div>
+                <div class="flex items-start gap-2 text-white/80 text-base justify-center md:justify-start">
+                    <i class="fa-solid fa-building" style="font-size: 20px !important; color: #fff !important"></i>
+                    <span class="break-words">Giấy phép hoạt động cấp ngày: 07/11/2024 - Số 328/GP-BTTTT</span>
                 </div>
             </div>
         </div>

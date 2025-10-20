@@ -13,7 +13,7 @@
         <h1 class="text-5xl md:text-6xl font-extrabold text-[#824DFF] mb-2 drop-shadow">OCCO</h1>
         <div class="text-2xl md:text-3xl font-semibold text-[#6D3AFF] mb-6">Về chúng tôi</div>
         <!-- Search box -->
-        <form class="w-full max-w-xl flex items-center bg-white rounded-full shadow px-4 py-2">
+        {{-- <form class="w-full max-w-xl flex items-center bg-white rounded-full shadow px-4 py-2">
             <svg class="w-5 h-5 text-[#824DFF] mr-2" fill="none" stroke="currentColor" stroke-width="2"
                 viewBox="0 0 24 24">
                 <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" />
@@ -22,7 +22,7 @@
             </svg>
             <input type="text" placeholder="Tìm kiếm"
                 class="flex-1 bg-transparent outline-none text-base text-gray-700 placeholder-gray-400" />
-        </form>
+        </form> --}}
     </div>
     <!-- Pet OCCO -->
     <img src="{{ asset('occo/privacy/gif(8).gif') }}" alt="OCCO Pet" class="w-80 -mt-30" />
