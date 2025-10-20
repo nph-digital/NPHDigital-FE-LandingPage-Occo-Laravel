@@ -52,7 +52,7 @@
     @if (app()->environment('local'))
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
-        @include('components.layouts.assets')
+        @include('components.layouts.app.assets')
     @endif
 </head>
 
