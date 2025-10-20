@@ -59,20 +59,20 @@
             <div class="text-white font-semibold text-lg mb-2">Liên hệ</div>
             <div class="flex flex-col gap-2 w-full items-center md:items-start">
                 <div class="flex items-center gap-2 text-white/80 text-base justify-center md:justify-start">
-                    <img src="{{ asset('occo/mail.svg') }}" alt="Mail" class="w-5 h-5">
+                    <i class="fa-solid fa-envelope"></i>
                     <a href="mailto:contact@occo.vn" aria-label="Gửi email đến contact@occo.vn" class="hover:text-white transition">contact@occo.vn</a>
                 </div>
                 <div class="flex items-center gap-2 text-white/80 text-base justify-center md:justify-start">
-                    <img src="{{ asset('occo/phone.svg') }}" alt="Phone" class="w-5 h-5">
+                    <i class="fa-solid fa-phone"></i>
                     <a href="tel:18003108" aria-label="Gọi số 1800 3108" class="hover:text-white transition">1800 3108</a>
                 </div>
                 <div class="flex items-start gap-2 text-white/80 text-base justify-center md:justify-start">
-                    <img src="{{ asset('occo/map.svg') }}" alt="Map" class="w-6 h-6 mt-1">
+                    <i class="fa-solid fa-map-location-dot"></i>
                     <span class="break-words">Số 838, Ấp Vĩnh Bình, Phường Tân An, Tây Ninh</span>
                 </div>
                 <div class="flex items-start gap-2 text-white/80 text-base justify-center md:justify-start">
-                    <i class="fa-solid fa-building" style="font-size: 20px !important; color: #fff !important"></i>
-                    <span class="break-words">Giấy phép hoạt động cấp ngày: 07/11/2024 - Số 328/GP-BTTTT</span>
+                    <i class="fa-solid fa-building" style="font-size: 20px"></i>
+                    <span class="break-words">Giấy phép hoạt động số 328/GP-BTTTT cấp ngày 07/11/2024</span>
                 </div>
             </div>
         </div>
