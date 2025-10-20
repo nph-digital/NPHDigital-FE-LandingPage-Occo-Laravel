@@ -11,8 +11,9 @@
                 class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[420px] h-[220px] bg-[#ffdf22]/90 rounded-full blur-[150px] z-0">
             </div>
             <div class="relative z-10 w-full">
-                <span
-                    class="inline-block bg-[#FF4040] text-white text-xs font-bold px-4 py-1 rounded-full mb-5">LIVE</span>
+                {{-- <span
+                    class="inline-block bg-[#FF4040] text-white text-xs font-bold px-4 py-1 rounded-full mb-5">LIVE</span> --}}
+                    <span><img src="{{ asset('occo/home/live.png') }}" alt="Live" class="w-18"></span>
                 <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-5 leading-tight">
                     Phòng Live – Tỏa Sáng Cá Tính, Kết Nối Mọi Người!
                 </h2>
