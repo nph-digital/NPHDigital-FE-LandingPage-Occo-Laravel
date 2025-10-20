@@ -7,7 +7,7 @@
                 <h2
                     class="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-snug drop-shadow-[0_2px_8px_rgba(255,255,255,0.6)]">
                     Kết bạn - Trò chuyện - Giải trí cực đã,
-                    tất cả gói gọn trong 1 ứng dụng
+                    tất cả gói gọn trong 1 ứng dụng!
                 </h2>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 w-full max-w-md z-20">
