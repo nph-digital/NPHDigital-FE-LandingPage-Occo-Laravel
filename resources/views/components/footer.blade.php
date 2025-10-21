@@ -68,7 +68,7 @@
                 </div>
                 <div class="flex items-start gap-2 text-white/80 text-base justify-center md:justify-start">
                     <i class="fa-solid fa-map-location-dot"></i>
-                    <span class="break-words">Số 838, Ấp Vĩnh Bình, Phường Tân An, Tây Ninh</span>
+                    <span class="break-words">Số 838, Ấp Vĩnh Bình, Phường Tân An, Tỉnh Tây Ninh</span>
                 </div>
                 <div class="flex items-start gap-2 text-white/80 text-base justify-center md:justify-start">
                     <i class="fa-solid fa-building" style="font-size: 20px"></i>
