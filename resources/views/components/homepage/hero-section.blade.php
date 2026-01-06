@@ -34,7 +34,7 @@
                 <span class="text-xs text-gray-900 font-semibold leading-4">Download for<br><span
                         class="text-lg font-bold">Windows</span></span>
             </a>
-            <a href="javascript:void(0)" onclick="openComingModal()" class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
+            <a href="https://apps.apple.com/vn/app/occo-n%C6%A1i-m%E1%BB%8Di-k%E1%BA%BFt-n%E1%BB%91i-b%E1%BA%AFt-%C4%91%E1%BA%A7u/id6749883710?l=vi&platform=iphone" target="_blank" class="flex items-center bg-white rounded-lg px-3 py-2 shadow hover:bg-gray-100 transition">
                 <img src="{{ asset('occo/home/apple.png') }}" alt="macOS" class="mr-2 w-6">
                 <span class="text-xs text-gray-900 font-semibold leading-4">Download for<br><span
                         class="text-lg font-bold">macOS</span></span>
